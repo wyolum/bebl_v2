@@ -1,4 +1,4 @@
-update=Sunday 14 September 2014 07:51:37 PM IST
+update=Sunday 14 September 2014 09:47:05 PM IST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -45,8 +45,9 @@ RptD_Y=100
 RptLab=1
 LabSize=50
 [eeschema/libraries]
-LibName1=libs/bebl_v2
-LibName2=libs/power
-LibName3=atmel
-LibName4=conn
-LibName5=device
+LibName1=regul
+LibName2=libs/bebl_v2
+LibName3=libs/power
+LibName4=atmel
+LibName5=conn
+LibName6=device
