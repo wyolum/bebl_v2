@@ -1,6 +1,6 @@
-update=Sunday 05 October 2014 05:28:48 PM IST
+update=Monday 06 October 2014 10:25:54 PM IST
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetITyp=0
@@ -31,13 +31,15 @@ LastNetListRead=i2gps_v1.net
 [pcbnew/libraries]
 LibDir=
 LibName1=i2gps_v1-libs/i2gps_v1
+[general]
+version=1
 [eeschema]
 version=1
 PageLayoutDescrFile=
 SubpartIdSeparator=0
 SubpartFirstId=65
 LibDir=
-NetFmtName=
+NetFmtName=PcbnewAdvanced
 RptD_X=0
 RptD_Y=100
 RptLab=1
@@ -45,5 +47,3 @@ LabSize=40
 [eeschema/libraries]
 LibName1=libs/bebl_v2
 LibName2=libs/power
-[general]
-version=1
