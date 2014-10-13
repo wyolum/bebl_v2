@@ -1,6 +1,6 @@
-update=Monday 06 October 2014 10:25:54 PM IST
+update=Sunday 12 October 2014 03:29:08 PM IST
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetITyp=0
@@ -35,15 +35,8 @@ LibName1=i2gps_v1-libs/i2gps_v1
 version=1
 [eeschema]
 version=1
-PageLayoutDescrFile=
-SubpartIdSeparator=0
-SubpartFirstId=65
 LibDir=
-NetFmtName=PcbnewAdvanced
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=40
 [eeschema/libraries]
 LibName1=libs/bebl_v2
 LibName2=libs/power
+LibName3=device

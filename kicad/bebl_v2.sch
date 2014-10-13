@@ -1,12 +1,13 @@
 EESchema Schematic File Version 2
 LIBS:bebl_v2
 LIBS:power
+LIBS:device
 LIBS:bebl_v2-cache
-EELAYER 24 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "BEBL_v2 (bar end brake light)"
 Date "2 may 2012"
 Rev "1"
@@ -1308,4 +1309,10 @@ Text Label 6000 3650 0    40   ~ 0
 GND
 Text Notes 5225 3450 0    40   ~ 0
 1x LED 20mA, 5mm, 9000mcd\n(On Indicator, Drive Light DRL)
+$Sheet
+S 5850 7250 500  150 
+U 543A53BD
+F0 "LED_Driver" 60
+F1 "LED_Driver.sch" 60
+$EndSheet
 $EndSCHEMATC
