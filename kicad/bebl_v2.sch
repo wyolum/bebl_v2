@@ -1,7 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:bebl_v2
 LIBS:power
-LIBS:device
 LIBS:bebl_v2-cache
 EELAYER 25 0
 EELAYER END
