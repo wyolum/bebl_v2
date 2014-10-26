@@ -73,7 +73,7 @@
   (pad 4 thru_hole circle (at 1.27 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 5 thru_hole circle (at 3.81 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 6 thru_hole circle (at 6.35 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
-  (model libs/3D_Modules/pins_array_6x1.wrl
+  (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pins_array_6x1.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -20,7 +20,7 @@
   (fp_arc (start 0.254 0) (end 2.794 1.905) (angle 286.2) (layer F.SilkS) (width 0.254))
   (pad 1 thru_hole circle (at -1.27 0) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
   (pad 2 thru_hole circle (at 1.27 0) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
-  (model discret/leds/led5_vertical_verde.wrl
+  (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
