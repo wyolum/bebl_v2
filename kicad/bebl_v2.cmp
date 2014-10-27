@@ -1,94 +1,87 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Sunday 26 October 2014 04:32:57 PM IST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Monday 27 October 2014 09:48:36 PM IST
 
 BeginCmp
 TimeStamp = /5431218A;
 Reference = B1;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /5431219E;
 Reference = B2;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /543121B2;
 Reference = B3;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /543121C6;
 Reference = B4;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /543121DA;
 Reference = B5;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /543121EE;
 Reference = B6;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
-EndCmp
-
-BeginCmp
-TimeStamp = /54312202;
-Reference = B7;
-ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /54312216;
 Reference = B8;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /5431222A;
 Reference = B9;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /5431223E;
 Reference = B10;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /54312252;
 Reference = B11;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /54312266;
 Reference = B12;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /5431227A;
 Reference = B13;
 ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout;
+IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
@@ -199,7 +192,7 @@ EndCmp
 BeginCmp
 TimeStamp = /5431586D;
 Reference = D1;
-ValeurCmp = IND;
+ValeurCmp = DRL;
 IdModule  = bebl_v2_pretty:LED-5MM;
 EndCmp
 
@@ -250,20 +243,6 @@ TimeStamp = /5415E4A0;
 Reference = D8;
 ValeurCmp = CHG;
 IdModule  = bebl_v2_pretty:LED-0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /543A53BD/543A5887;
-Reference = D201;
-ValeurCmp = DIODE_LED;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /543A53BD/543A61D5;
-Reference = D202;
-ValeurCmp = DIODE_LED;
-IdModule  = ;
 EndCmp
 
 BeginCmp
@@ -330,17 +309,31 @@ IdModule  = bebl_v2_pretty:solder_bridge_3;
 EndCmp
 
 BeginCmp
-TimeStamp = /543A53BD/543A5558;
-Reference = Q201;
-ValeurCmp = MGSF1N03L;
-IdModule  = ;
+TimeStamp = /544F0628;
+Reference = P8;
+ValeurCmp = DRL_LED;
+IdModule  = bebl_v2_pretty:pin_socket_2;
 EndCmp
 
 BeginCmp
-TimeStamp = /543A53BD/543A56E5;
-Reference = Q202;
-ValeurCmp = MGSF1N03L;
-IdModule  = ;
+TimeStamp = /544E73AB;
+Reference = P9;
+ValeurCmp = LED_DRV;
+IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F01FA;
+Reference = P10;
+ValeurCmp = LED_DRL;
+IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E68CF;
+Reference = P11;
+ValeurCmp = DRV_LED;
+IdModule  = bebl_v2_pretty:pin_socket_2;
 EndCmp
 
 BeginCmp
@@ -393,31 +386,10 @@ IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /543A53BD/543A5A71;
-Reference = R201;
-ValeurCmp = 100R;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /543A53BD/543A555F;
-Reference = R202;
-ValeurCmp = Rled;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /543A53BD/543A56F1;
-Reference = R203;
-ValeurCmp = 100R;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /543A53BD/543A56EB;
-Reference = R204;
-ValeurCmp = Rled;
-IdModule  = ;
+TimeStamp = /544EC93F;
+Reference = R8;
+ValeurCmp = 10k;
+IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
@@ -449,6 +421,62 @@ IdModule  = bebl_v2_pretty:screw_3mm;
 EndCmp
 
 BeginCmp
+TimeStamp = /544E7E14;
+Reference = SC5;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E7E1A;
+Reference = SC6;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E7E20;
+Reference = SC7;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E7E26;
+Reference = SC8;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E873B;
+Reference = SC9;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E8741;
+Reference = SC10;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E8747;
+Reference = SC11;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E874D;
+Reference = SC12;
+ValeurCmp = SCREW;
+IdModule  = bebl_v2_pretty:screw_3mm;
+EndCmp
+
+BeginCmp
 TimeStamp = /4DCA7D67;
 Reference = SW1;
 ValeurCmp = RST;
@@ -456,10 +484,10 @@ IdModule  = bebl_v2_pretty:Switch_SMT;
 EndCmp
 
 BeginCmp
-TimeStamp = /543A53BD/543A5C10;
-Reference = SW201;
-ValeurCmp = SWITCH;
-IdModule  = ;
+TimeStamp = /544EC7EE;
+Reference = SW2;
+ValeurCmp = MODE;
+IdModule  = bebl_v2_pretty:Switch_SMT;
 EndCmp
 
 BeginCmp
