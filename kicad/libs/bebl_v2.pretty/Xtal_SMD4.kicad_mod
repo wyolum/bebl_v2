@@ -19,4 +19,9 @@
     (scale (xyz 0.35 0.3 0.5))
     (rotate (xyz 0 0 0))
   )
+  (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/crystal_4pins_smd.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 0.35 0.3 0.5))
+    (rotate (xyz 0 0 0))
+  )
 )

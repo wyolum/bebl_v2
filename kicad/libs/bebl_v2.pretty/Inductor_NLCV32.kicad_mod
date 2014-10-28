@@ -17,4 +17,9 @@
     (scale (xyz 0.3 0.3 0.3))
     (rotate (xyz 0 0 0))
   )
+  (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/inductor_smd_do3316p.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 0.3 0.3 0.3))
+    (rotate (xyz 0 0 0))
+  )
 )
