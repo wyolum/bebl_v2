@@ -2,7 +2,7 @@ EESchema Schematic File Version 2
 LIBS:bebl_v2
 LIBS:power
 LIBS:bebl_v2-cache
-EELAYER 25 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -657,7 +657,7 @@ $EndComp
 NoConn ~ 10100 5300
 NoConn ~ 10100 5400
 Wire Wire Line
-	10175 5700 10175 6400
+	10175 5700 10175 6250
 Wire Wire Line
 	10100 5900 10175 5900
 Connection ~ 10175 5900
@@ -669,12 +669,12 @@ Wire Wire Line
 $Comp
 L GND #PWR04
 U 1 1 542E7DB5
-P 10175 6400
-F 0 "#PWR04" H 10175 6400 30  0001 C CNN
-F 1 "GND" H 10175 6330 30  0001 C CNN
-F 2 "" H 10175 6400 60  0001 C CNN
-F 3 "" H 10175 6400 60  0001 C CNN
-	1    10175 6400
+P 10175 6250
+F 0 "#PWR04" H 10175 6250 30  0001 C CNN
+F 1 "GND" H 10175 6180 30  0001 C CNN
+F 2 "" H 10175 6250 60  0001 C CNN
+F 3 "" H 10175 6250 60  0001 C CNN
+	1    10175 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -759,20 +759,18 @@ Wire Wire Line
 Wire Wire Line
 	10575 5000 10575 5175
 Connection ~ 10575 5100
-Text Label 8725 5200 0    40   ~ 0
-ACL_SDO
 Wire Wire Line
-	8300 5600 9000 5600
+	8725 5600 9000 5600
 Wire Wire Line
-	8650 5700 9000 5700
+	8725 5700 9000 5700
 Wire Wire Line
 	9000 5400 8725 5400
 Wire Wire Line
 	8725 5300 9000 5300
 Wire Wire Line
-	7950 5200 9000 5200
+	8625 5200 9000 5200
 Wire Wire Line
-	8675 5100 9000 5100
+	8625 5100 9000 5100
 Text Label 8725 5400 0    40   ~ 0
 SCL
 Text Label 8725 5600 0    40   ~ 0
@@ -780,113 +778,28 @@ ACL_INT1
 Text Label 8725 5700 0    40   ~ 0
 ACL_INT2
 Wire Wire Line
-	7875 4775 10175 4775
+	8400 4775 10175 4775
 Wire Wire Line
-	8675 5100 8675 4775
-Connection ~ 8675 4775
-$Comp
-L CONN_3 P5
-U 1 1 542E7E0B
-P 7950 6350
-F 0 "P5" V 7900 6350 50  0000 C CNN
-F 1 "Alt_Add" V 8000 6350 50  0000 C CNN
-F 2 "bebl_v2_pretty:solder_bridge_3" H 7950 6350 60  0001 C CNN
-F 3 "" H 7950 6350 60  0000 C CNN
-F 4 "CONN HEADER 50POS .100\" SGL GOLD" H 7950 6450 60  0001 L CNN "Field4"
-F 5 "Header, Unshrouded, Male pin," H 7950 6550 60  0001 L CNN "Field5"
-F 6 "0.1\" pitch x 50 nos" H 7950 6650 60  0001 L CNN "Field6"
-F 7 "Samtec Inc" H 7950 6750 60  0001 L CNN "Field7"
-F 8 "TSW-150-07-L-S" H 7950 6850 60  0001 L CNN "Field8"
-F 9 "Digikey" H 7950 6950 60  0001 L CNN "Field9"
-F 10 "SAM1031-50-ND" H 7950 7050 60  0001 L CNN "Field10"
-F 11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&lang=en&keywords=SAM1031-50-ND&x=15&y=16&cur=USD" H 7950 7150 60  0001 L CNN "Field11"
-	1    7950 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_3 P6
-U 1 1 542E7E19
-P 8300 6350
-F 0 "P6" V 8250 6350 50  0000 C CNN
-F 1 "Int1" V 8350 6350 50  0000 C CNN
-F 2 "bebl_v2_pretty:solder_bridge_3" H 8300 6350 60  0001 C CNN
-F 3 "" H 8300 6350 60  0000 C CNN
-F 4 "CONN HEADER 50POS .100\" SGL GOLD" H 8300 6450 60  0001 L CNN "Field4"
-F 5 "Header, Unshrouded, Male pin," H 8300 6550 60  0001 L CNN "Field5"
-F 6 "0.1\" pitch x 50 nos" H 8300 6650 60  0001 L CNN "Field6"
-F 7 "Samtec Inc" H 8300 6750 60  0001 L CNN "Field7"
-F 8 "TSW-150-07-L-S" H 8300 6850 60  0001 L CNN "Field8"
-F 9 "Digikey" H 8300 6950 60  0001 L CNN "Field9"
-F 10 "SAM1031-50-ND" H 8300 7050 60  0001 L CNN "Field10"
-F 11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&lang=en&keywords=SAM1031-50-ND&x=15&y=16&cur=USD" H 8300 7150 60  0001 L CNN "Field11"
-	1    8300 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_3 P7
-U 1 1 542E7E27
-P 8650 6350
-F 0 "P7" V 8600 6350 50  0000 C CNN
-F 1 "Int2" V 8700 6350 50  0000 C CNN
-F 2 "bebl_v2_pretty:solder_bridge_3" H 8650 6350 60  0001 C CNN
-F 3 "" H 8650 6350 60  0000 C CNN
-F 4 "CONN HEADER 50POS .100\" SGL GOLD" H 8650 6450 60  0001 L CNN "Field4"
-F 5 "Header, Unshrouded, Male pin," H 8650 6550 60  0001 L CNN "Field5"
-F 6 "0.1\" pitch x 50 nos" H 8650 6650 60  0001 L CNN "Field6"
-F 7 "Samtec Inc" H 8650 6750 60  0001 L CNN "Field7"
-F 8 "TSW-150-07-L-S" H 8650 6850 60  0001 L CNN "Field8"
-F 9 "Digikey" H 8650 6950 60  0001 L CNN "Field9"
-F 10 "SAM1031-50-ND" H 8650 7050 60  0001 L CNN "Field10"
-F 11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&lang=en&keywords=SAM1031-50-ND&x=15&y=16&cur=USD" H 8650 7150 60  0001 L CNN "Field11"
-	1    8650 6350
-	0    1    1    0   
-$EndComp
+	8625 5100 8625 4775
+Connection ~ 8625 4775
 Wire Wire Line
-	8650 6000 8650 5700
-Wire Wire Line
-	8300 5600 8300 6000
-Wire Wire Line
-	7950 6000 7950 5200
-Wire Wire Line
-	8550 5825 8550 6000
-Wire Wire Line
-	7850 5825 8550 5825
-Wire Wire Line
-	7850 5825 7850 6000
-Wire Wire Line
-	8200 4775 8200 6000
-Connection ~ 8200 5825
-Connection ~ 8200 4775
-Wire Wire Line
-	8050 6000 8050 5925
-Wire Wire Line
-	8050 5925 8925 5925
-Wire Wire Line
-	8750 5925 8750 6000
-Wire Wire Line
-	8400 6000 8400 5925
-Connection ~ 8400 5925
-Wire Wire Line
-	8925 5925 8925 6400
-Connection ~ 8750 5925
+	8625 6250 8625 5200
 $Comp
 L GND #PWR05
 U 1 1 542E7E3D
-P 8925 6400
-F 0 "#PWR05" H 8925 6400 30  0001 C CNN
-F 1 "GND" H 8925 6330 30  0001 C CNN
-F 2 "" H 8925 6400 60  0001 C CNN
-F 3 "" H 8925 6400 60  0001 C CNN
-	1    8925 6400
+P 8625 6250
+F 0 "#PWR05" H 8625 6250 30  0001 C CNN
+F 1 "GND" H 8625 6180 30  0001 C CNN
+F 2 "" H 8625 6250 60  0001 C CNN
+F 3 "" H 8625 6250 60  0001 C CNN
+	1    8625 6250
 	1    0    0    -1  
 $EndComp
-Text Label 8925 5925 2    40   ~ 0
-GND
 Text Label 10175 6100 0    50   ~ 0
 GND
 Text Label 8725 5300 0    40   ~ 0
 SDA
-Text Label 7875 4775 0    50   ~ 0
+Text Label 8400 4775 0    50   ~ 0
 3V3
 $Comp
 L SCREW SC2
@@ -991,28 +904,6 @@ F 3 "" H 3625 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L I/O B8
-U 1 1 54312216
-P 3625 3450
-F 0 "B8" H 3705 3450 40  0000 L CNN
-F 1 "I/O" H 3625 3505 30  0001 C CNN
-F 2 "bebl_v2_pretty:breakout_smd" H 3625 3450 60  0001 C CNN
-F 3 "" H 3625 3450 60  0000 C CNN
-	1    3625 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L I/O B9
-U 1 1 5431222A
-P 3625 3550
-F 0 "B9" H 3705 3550 40  0000 L CNN
-F 1 "I/O" H 3625 3605 30  0001 C CNN
-F 2 "bebl_v2_pretty:breakout_smd" H 3625 3550 60  0001 C CNN
-F 3 "" H 3625 3550 60  0000 C CNN
-	1    3625 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L I/O B10
 U 1 1 5431223E
 P 3625 3850
@@ -1060,8 +951,6 @@ Wire Wire Line
 	3400 4150 3475 4150
 Wire Wire Line
 	3475 4050 3400 4050
-Wire Wire Line
-	3400 3550 3475 3550
 Wire Wire Line
 	3400 3850 3475 3850
 Wire Wire Line
@@ -1129,8 +1018,6 @@ Text Notes 6650 3175 0    50   Italic 10
 VOLTAGE REGULATOR
 Text Notes 7550 700  0    50   Italic 10
 LiPo CHARGER
-Wire Wire Line
-	3400 3350 4125 3350
 Text Label 10300 1125 0    50   ~ 0
 PROG
 Text Label 8975 3300 0    40   ~ 0
@@ -1139,8 +1026,6 @@ Text Label 3850 4650 0    50   ~ 0
 LED_PWM
 Wire Wire Line
 	3400 3750 3850 3750
-Wire Wire Line
-	3475 3450 3400 3450
 Wire Wire Line
 	3400 3650 3900 3650
 $Comp
@@ -1563,7 +1448,7 @@ F 3 "" H 4475 2750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4125 3350 4125 1800
+	4125 1800 4125 3550
 Wire Wire Line
 	4125 1800 4475 1800
 Connection ~ 4475 1800
@@ -1612,8 +1497,6 @@ F 3 "" H 4800 3225 60  0001 C CNN
 	1    4800 3225
 	1    0    0    -1  
 $EndComp
-Text Label 3625 3350 0    40   ~ 0
-INT0
 Wire Wire Line
 	4625 3650 4625 2875
 Wire Wire Line
@@ -1766,4 +1649,16 @@ Wire Wire Line
 	8975 1800 8975 2325
 Wire Wire Line
 	8975 2325 9100 2325
+Wire Wire Line
+	4125 3550 3400 3550
+Wire Wire Line
+	3400 3350 3625 3350
+Wire Wire Line
+	3400 3450 3625 3450
+Text Label 3450 3550 0    40   ~ 0
+MODE
+Text Label 3625 3350 0    40   ~ 0
+ACL_INT1
+Text Label 3625 3450 0    40   ~ 0
+ACL_INT2
 $EndSCHEMATC

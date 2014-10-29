@@ -1,11 +1,11 @@
-(kicad_pcb (version 4) (host pcbnew "(2014-jul-16 BZR unknown)-product")
+(kicad_pcb (version 4) (host pcbnew "(2014-09-25 BZR 5147)-product")
 
   (general
     (links 143)
     (no_connects 143)
-    (area 36.399999 36.399999 119.600001 77.075001)
+    (area 37.924999 37.924999 118.075001 77.075001)
     (thickness 1.6)
-    (drawings 24)
+    (drawings 25)
     (tracks 0)
     (zones 0)
     (modules 78)
@@ -62,7 +62,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFC777F)
+    (visible_elements 7FFCF77F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -218,7 +218,7 @@
   )
 
   (module bebl_v2_pretty:batt_clip (layer B.Cu) (tedit 544C0048) (tstamp 54545C4F)
-    (at 98 50 180)
+    (at 97.5 50 180)
     (path /54491858)
     (fp_text reference B14 (at 3.556 0 450) (layer B.SilkS)
       (effects (font (size 1.5 1.5) (thickness 0.15)) (justify mirror))
@@ -920,7 +920,7 @@
   )
 
   (module bebl_v2_pretty:screw_3mm (layer F.Cu) (tedit 4F5B3BD6) (tstamp 544E6534)
-    (at 110.5 55)
+    (at 110 54.5)
     (descr "vite 2,5mm")
     (path /544E7E26)
     (fp_text reference SC8 (at 0 1.0795) (layer F.SilkS) hide
@@ -933,7 +933,7 @@
   )
 
   (module bebl_v2_pretty:screw_3mm (layer F.Cu) (tedit 4F5B3BD6) (tstamp 544E652F)
-    (at 110.5 45)
+    (at 110 45.5)
     (descr "vite 2,5mm")
     (path /544E7E20)
     (fp_text reference SC7 (at 0 1.0795) (layer F.SilkS) hide
@@ -946,7 +946,7 @@
   )
 
   (module bebl_v2_pretty:screw_3mm (layer F.Cu) (tedit 4F5B3BD6) (tstamp 544E652A)
-    (at 54.5 45)
+    (at 55 45.5)
     (descr "vite 2,5mm")
     (path /544E7E1A)
     (fp_text reference SC6 (at 0 1.0795) (layer F.SilkS) hide
@@ -959,7 +959,7 @@
   )
 
   (module bebl_v2_pretty:screw_3mm (layer F.Cu) (tedit 4F5B3BD6) (tstamp 544E6525)
-    (at 54.5 55)
+    (at 55 54.5)
     (descr "vite 2,5mm")
     (path /544E7E14)
     (fp_text reference SC5 (at 0 1.0795) (layer F.SilkS) hide
@@ -1281,7 +1281,7 @@
   )
 
   (module bebl_v2_pretty:c_0805 (layer F.Cu) (tedit 4F42056D) (tstamp 54545CDD)
-    (at 91 50 270)
+    (at 91 53.5 270)
     (descr "SMT capacitor, 0805")
     (path /5415E493)
     (attr smd)
@@ -1417,7 +1417,7 @@
   )
 
   (module bebl_v2_pretty:c_0805 (layer F.Cu) (tedit 4F42056D) (tstamp 54545D11)
-    (at 83 50 270)
+    (at 83 53.5 270)
     (descr "SMT capacitor, 0805")
     (path /5415E4EE)
     (attr smd)
@@ -1876,8 +1876,8 @@
     )
   )
 
-  (module bebl_v2_pretty:Header_3x2_ISP (layer B.Cu) (tedit 4F5B3B8D) (tstamp 54545E02)
-    (at 71.5 39.5)
+  (module bebl_v2_pretty:Header_3x2_ISP (layer B.Cu) (tedit 4F5B3B8D) (tstamp 5450CDDB)
+    (at 67.5 39.5)
     (descr "Connecteur 6 pins")
     (tags "CONN DEV")
     (path /4DCD1997)
@@ -2050,7 +2050,7 @@
     )
   )
 
-  (module bebl_v2_pretty:USB_B_Micro (layer F.Cu) (tedit 544D381A) (tstamp 54545E7D)
+  (module bebl_v2_pretty:USB_B_Micro (layer F.Cu) (tedit 544D381A) (tstamp 5450CDFE)
     (at 114 50 180)
     (path /5415F287)
     (attr smd)
@@ -2183,7 +2183,7 @@
   )
 
   (module bebl_v2_pretty:r_0805 (layer F.Cu) (tedit 4F420886) (tstamp 54545EAB)
-    (at 87 56 180)
+    (at 87 60 180)
     (descr "SMT resistor, 0805")
     (path /4DCA7BFC)
     (attr smd)
@@ -2353,7 +2353,7 @@
   )
 
   (module bebl_v2_pretty:r_0805 (layer F.Cu) (tedit 4F420886) (tstamp 54545EEC)
-    (at 87 53.5)
+    (at 87 57)
     (descr "SMT resistor, 0805")
     (path /5415E4B4)
     (attr smd)
@@ -2386,8 +2386,8 @@
     )
   )
 
-  (module bebl_v2_pretty:r_0805 (layer F.Cu) (tedit 4F420886) (tstamp 54545EF9)
-    (at 87 46.5 180)
+  (module bebl_v2_pretty:r_0805 (layer F.Cu) (tedit 4F420886) (tstamp 5450CD92)
+    (at 87 50 180)
     (descr "SMT resistor, 0805")
     (path /5415E508)
     (attr smd)
@@ -2723,7 +2723,7 @@
   )
 
   (module bebl_v2_pretty:SOT23-5 (layer F.Cu) (tedit 4F4209A8) (tstamp 54545F96)
-    (at 87 50 270)
+    (at 87 53.5 270)
     (descr SOT23-5)
     (path /5415E477)
     (attr smd)
@@ -2844,8 +2844,8 @@
     )
   )
 
-  (module bebl_v2_pretty:CONN_JST-2_SMD (layer F.Cu) (tedit 544CE2D7) (tstamp 54545E5B)
-    (at 99.5 42.5 270)
+  (module bebl_v2_pretty:CONN_JST-2_SMD (layer F.Cu) (tedit 544CE2D7) (tstamp 5450CDA4)
+    (at 87.5 42.5 270)
     (tags JST)
     (path /4E1ED2A7)
     (fp_text reference P3 (at -5.5245 -7.747 540) (layer F.SilkS)
@@ -2881,6 +2881,18 @@
     )
   )
 
+  (dimension 80 (width 0.3) (layer Dwgs.User)
+    (gr_text "80.000 mm" (at 78 32.15) (layer Dwgs.User)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (feature1 (pts (xy 118 35.5) (xy 118 30.8)))
+    (feature2 (pts (xy 38 35.5) (xy 38 30.8)))
+    (crossbar (pts (xy 38 33.5) (xy 118 33.5)))
+    (arrow1a (pts (xy 118 33.5) (xy 116.873496 34.086421)))
+    (arrow1b (pts (xy 118 33.5) (xy 116.873496 32.913579)))
+    (arrow2a (pts (xy 38 33.5) (xy 39.126504 34.086421)))
+    (arrow2b (pts (xy 38 33.5) (xy 39.126504 32.913579)))
+  )
   (gr_line (start 38 43) (end 38 38) (angle 90) (layer Dwgs.User) (width 0.2))
   (gr_line (start 43 43) (end 38 43) (angle 90) (layer Dwgs.User) (width 0.2))
   (gr_line (start 43 38) (end 43 43) (angle 90) (layer Dwgs.User) (width 0.2))
