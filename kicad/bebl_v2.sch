@@ -2,7 +2,7 @@ EESchema Schematic File Version 2
 LIBS:bebl_v2
 LIBS:power
 LIBS:bebl_v2-cache
-EELAYER 24 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -214,7 +214,7 @@ U 1 1 4E1ED2A7
 P 7450 3775
 F 0 "P3" H 7450 3875 50  0000 C CNN
 F 1 "LiPo" H 7450 3975 50  0000 C CNN
-F 2 "bebl_v2_pretty:CONN_JST-2_SMD" H 7450 3775 60  0001 C CNN
+F 2 "bebl_v2_pretty:pin_strip_2" H 7450 3775 60  0001 C CNN
 F 3 "" H 7450 3775 60  0001 C CNN
 	1    7450 3775
 	-1   0    0    -1  
@@ -1553,50 +1553,6 @@ F 3 "" H 3625 7300 60  0001 C CNN
 	1    3625 7300
 	1    0    0    -1  
 $EndComp
-$Comp
-L SCREW SC9
-U 1 1 544E873B
-P 3825 6700
-F 0 "SC9" H 3825 6600 40  0000 C CNN
-F 1 "SCREW" H 3825 6800 40  0001 C CNN
-F 2 "bebl_v2_pretty:screw_3mm" H 3825 6700 60  0001 C CNN
-F 3 "" H 3825 6700 60  0001 C CNN
-	1    3825 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L SCREW SC10
-U 1 1 544E8741
-P 3825 6900
-F 0 "SC10" H 3825 6800 40  0000 C CNN
-F 1 "SCREW" H 3825 7000 40  0001 C CNN
-F 2 "bebl_v2_pretty:screw_3mm" H 3825 6900 60  0001 C CNN
-F 3 "" H 3825 6900 60  0001 C CNN
-	1    3825 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L SCREW SC11
-U 1 1 544E8747
-P 3825 7100
-F 0 "SC11" H 3825 7000 40  0000 C CNN
-F 1 "SCREW" H 3825 7200 40  0001 C CNN
-F 2 "bebl_v2_pretty:screw_3mm" H 3825 7100 60  0001 C CNN
-F 3 "" H 3825 7100 60  0001 C CNN
-	1    3825 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L SCREW SC12
-U 1 1 544E874D
-P 3825 7300
-F 0 "SC12" H 3825 7200 40  0000 C CNN
-F 1 "SCREW" H 3825 7400 40  0001 C CNN
-F 2 "bebl_v2_pretty:screw_3mm" H 3825 7300 60  0001 C CNN
-F 3 "" H 3825 7300 60  0001 C CNN
-	1    3825 7300
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	11000 4650 11000 6500
 Wire Notes Line
@@ -1657,8 +1613,8 @@ Wire Wire Line
 	3400 3450 3625 3450
 Text Label 3450 3550 0    40   ~ 0
 MODE
-Text Label 3625 3350 0    40   ~ 0
-ACL_INT1
 Text Label 3625 3450 0    40   ~ 0
+ACL_INT1
+Text Label 3625 3350 0    40   ~ 0
 ACL_INT2
 $EndSCHEMATC

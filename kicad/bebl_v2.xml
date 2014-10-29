@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <export version="D">
     <design>
-        <source>/home/anool/projects-git/bebl_v2/kicad/bebl_v2.sch</source>
-        <date>Wednesday 29 October 2014 04:45:18 PM IST</date>
-        <tool>Eeschema (2014-09-25 BZR 5147)-product</tool>
+        <source>/home/samata/projects-git/bebl_v2/kicad/bebl_v2.sch</source>
+        <date>Wednesday 29 October 2014 08:19:46 PM IST</date>
+        <tool>Eeschema (2014-jul-16 BZR unknown)-product</tool>
     </design>
     <components>
         <comp ref="C2">
@@ -534,34 +534,6 @@
             <sheetpath names="/" tstamps="/"/>
             <tstamp>544E7E26</tstamp>
         </comp>
-        <comp ref="SC9">
-            <value>SCREW</value>
-            <footprint>bebl_v2_pretty:screw_3mm</footprint>
-            <libsource lib="bebl_v2" part="SCREW"/>
-            <sheetpath names="/" tstamps="/"/>
-            <tstamp>544E873B</tstamp>
-        </comp>
-        <comp ref="SC10">
-            <value>SCREW</value>
-            <footprint>bebl_v2_pretty:screw_3mm</footprint>
-            <libsource lib="bebl_v2" part="SCREW"/>
-            <sheetpath names="/" tstamps="/"/>
-            <tstamp>544E8741</tstamp>
-        </comp>
-        <comp ref="SC11">
-            <value>SCREW</value>
-            <footprint>bebl_v2_pretty:screw_3mm</footprint>
-            <libsource lib="bebl_v2" part="SCREW"/>
-            <sheetpath names="/" tstamps="/"/>
-            <tstamp>544E8747</tstamp>
-        </comp>
-        <comp ref="SC12">
-            <value>SCREW</value>
-            <footprint>bebl_v2_pretty:screw_3mm</footprint>
-            <libsource lib="bebl_v2" part="SCREW"/>
-            <sheetpath names="/" tstamps="/"/>
-            <tstamp>544E874D</tstamp>
-        </comp>
         <comp ref="P13">
             <value>LED_CHG</value>
             <footprint>bebl_v2_pretty:pin_strip_2</footprint>
@@ -883,7 +855,7 @@
     </libparts>
     <libraries>
         <library logical="bebl_v2">
-            <uri>/home/anool/projects-git/bebl_v2/kicad/libs/bebl_v2.lib</uri>
+            <uri>/home/samata/projects-git/bebl_v2/kicad/libs/bebl_v2.lib</uri>
         </library>
     </libraries>
     <nets>

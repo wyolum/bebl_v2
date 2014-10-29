@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Monday 27 October 2014 09:48:36 PM IST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Wednesday 29 October 2014 10:26:42 PM IST
 
 BeginCmp
 TimeStamp = /5431218A;
@@ -38,20 +38,6 @@ EndCmp
 BeginCmp
 TimeStamp = /543121EE;
 Reference = B6;
-ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout_smd;
-EndCmp
-
-BeginCmp
-TimeStamp = /54312216;
-Reference = B8;
-ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout_smd;
-EndCmp
-
-BeginCmp
-TimeStamp = /5431222A;
-Reference = B9;
 ValeurCmp = I/O;
 IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
@@ -277,7 +263,7 @@ BeginCmp
 TimeStamp = /4E1ED2A7;
 Reference = P3;
 ValeurCmp = LiPo;
-IdModule  = bebl_v2_pretty:CONN_JST-2_SMD;
+IdModule  = bebl_v2_pretty:pin_strip_2;
 EndCmp
 
 BeginCmp
@@ -285,27 +271,6 @@ TimeStamp = /5415F287;
 Reference = P4;
 ValeurCmp = USB-Micro;
 IdModule  = bebl_v2_pretty:USB_B_Micro;
-EndCmp
-
-BeginCmp
-TimeStamp = /542E7E0B;
-Reference = P5;
-ValeurCmp = Alt_Add;
-IdModule  = bebl_v2_pretty:solder_bridge_3;
-EndCmp
-
-BeginCmp
-TimeStamp = /542E7E19;
-Reference = P6;
-ValeurCmp = Int1;
-IdModule  = bebl_v2_pretty:solder_bridge_3;
-EndCmp
-
-BeginCmp
-TimeStamp = /542E7E27;
-Reference = P7;
-ValeurCmp = Int2;
-IdModule  = bebl_v2_pretty:solder_bridge_3;
 EndCmp
 
 BeginCmp
@@ -334,6 +299,20 @@ TimeStamp = /544E68CF;
 Reference = P11;
 ValeurCmp = DRV_LED;
 IdModule  = bebl_v2_pretty:pin_socket_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F00AA;
+Reference = P12;
+ValeurCmp = CHG_LED;
+IdModule  = bebl_v2_pretty:pin_socket_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /544EF97E;
+Reference = P13;
+ValeurCmp = LED_CHG;
+IdModule  = bebl_v2_pretty:pin_strip_2;
 EndCmp
 
 BeginCmp
@@ -444,34 +423,6 @@ EndCmp
 BeginCmp
 TimeStamp = /544E7E26;
 Reference = SC8;
-ValeurCmp = SCREW;
-IdModule  = bebl_v2_pretty:screw_3mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /544E873B;
-Reference = SC9;
-ValeurCmp = SCREW;
-IdModule  = bebl_v2_pretty:screw_3mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /544E8741;
-Reference = SC10;
-ValeurCmp = SCREW;
-IdModule  = bebl_v2_pretty:screw_3mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /544E8747;
-Reference = SC11;
-ValeurCmp = SCREW;
-IdModule  = bebl_v2_pretty:screw_3mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /544E874D;
-Reference = SC12;
 ValeurCmp = SCREW;
 IdModule  = bebl_v2_pretty:screw_3mm;
 EndCmp
