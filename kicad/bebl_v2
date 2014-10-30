@@ -1,7 +1,7 @@
 Reference, Value, Footprint, Datasheet, Digikey, Field4, Field5, Field6, Field7, Field8, Field9, Field10, Field11
 C2,22p,bebl_v2_pretty:c_0805,,490-1734-1-ND,,,,,,,,
 C1,22p,bebl_v2_pretty:c_0805,,490-1734-1-ND,,,,,,,,
-P3,LiPo,bebl_v2_pretty:CONN_JST-2_SMD,
+P3,Ext_LiPo,bebl_v2_pretty:pin_strip_2,
 P1,ISP,bebl_v2_pretty:Header_3x2_ISP,
 SC1,SCREW,bebl_v2_pretty:screw_3mm,
 P2,FTDI,bebl_v2_pretty:PIN_ARRAY-6X1,
