@@ -8,7 +8,7 @@ POST_R = 35 * mm / 2.;
 SCREW_R = 2.6 * mm / 2.;
 SCREW_Y_SEP = 19 * mm;
 SCREW_Z_SEP = 75 * mm;
-SCREW_OFFSET = 4 * mm;
+SCREW_OFFSET = 5.5 * mm;
 BAND_W = 20 * mm;
 BAND_T = 3 * mm;
 BAND_OFF = 6 * mm;
@@ -16,10 +16,12 @@ BAND_OFF = 6 * mm;
 BORE_R = 6 * mm / 2;
 
 Z = 83 * mm;
+Z = 86 * mm;
 X0 = 25 * mm;
 X1 = 26.5 * mm;
 X = X0 + X1;
 Y = 27 * mm;
+Y = 30 * mm;
 POST_ANG = 18;
 
 intersection(){
