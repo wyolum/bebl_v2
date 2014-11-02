@@ -8,7 +8,7 @@ POST_R = 35 * mm / 2.;
 SCREW_R = 2.6 * mm / 2.;
 SCREW_Y_SEP = 19 * mm;
 SCREW_Z_SEP = 75 * mm;
-SCREW_OFFSET = 5.5 * mm;
+SCREW_OFF = 5.5 * mm;
 BAND_W = 20 * mm; // for .75" strap
 BAND_W = 1*inch + 1 * mm; // for 1" strap
 BAND_T = 3 * mm;
@@ -38,23 +38,23 @@ module jwedge(){
 	}  
       }
       // screw holes
-      translate([0, SCREW_OFFSET, SCREW_OFFSET])
+      translate([0, SCREW_OFF, SCREW_OFF])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=100*mm, r=SCREW_R);
-      translate([0, SCREW_OFFSET + SCREW_Y_SEP, SCREW_OFFSET])
+      translate([0, SCREW_OFF + SCREW_Y_SEP, SCREW_OFF])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=100*mm, r=SCREW_R);
-      translate([0, SCREW_OFFSET + SCREW_Y_SEP, SCREW_OFFSET + SCREW_Z_SEP])
+      translate([0, SCREW_OFF + SCREW_Y_SEP, SCREW_OFF + SCREW_Z_SEP])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=100*mm, r=SCREW_R);
-      translate([0, SCREW_OFFSET, SCREW_OFFSET + SCREW_Z_SEP])
+      translate([0, SCREW_OFF, SCREW_OFF + SCREW_Z_SEP])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=100*mm, r=SCREW_R);
   
       // counter bores
-      translate([0, SCREW_OFFSET, SCREW_OFFSET])
+      translate([0, SCREW_OFF, SCREW_OFF])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=X - 4*mm, r=BORE_R);
-      translate([0, SCREW_OFFSET + SCREW_Y_SEP, SCREW_OFFSET])
+      translate([0, SCREW_OFF + SCREW_Y_SEP, SCREW_OFF])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=X - 4*mm, r=BORE_R);
-      translate([0, SCREW_OFFSET + SCREW_Y_SEP, SCREW_OFFSET + SCREW_Z_SEP])
+      translate([0, SCREW_OFF + SCREW_Y_SEP, SCREW_OFF + SCREW_Z_SEP])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=X - 4*mm, r=BORE_R);
-      translate([0, SCREW_OFFSET, SCREW_OFFSET + SCREW_Z_SEP])
+      translate([0, SCREW_OFF, SCREW_OFF + SCREW_Z_SEP])
 	rotate(a=90, v=[0, 1, 0])cylinder(h=X - 4*mm, r=BORE_R);
 
       // BAND
