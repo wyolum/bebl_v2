@@ -21,7 +21,7 @@ DEPTH = X - T;
 POST_ANG = 18;
 
 
-LED_OFF = 16 * mm;
+LED_OFF = 13 * mm;
 LED_SEP = 10 * mm;
 N_LED = 5;
 
@@ -73,6 +73,6 @@ difference(){
   for(i = [0:N_LED-1]){
     translate([-1, Y/2, LED_OFF + i * LED_SEP])rotate(a=90, v=[0, 1, 0])cylinder(r=LED_R, h=LED_H);
   }
-  translate([-1, Y/2, 73*mm])rotate(a=90, v=[0, 1, 0])cylinder(r=LED_R, h=LED_H);
+  translate([-1, Y/2, LED_OFF + (N_LED + 1) * LED_SEP])rotate(a=90, v=[0, 1, 0])cylinder(r=LED_R, h=LED_H);
 }
 
