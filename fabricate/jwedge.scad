@@ -24,6 +24,7 @@ X = X0 + X1;
 Y = 27 * mm;
 Y = 30 * mm;
 POST_ANG = 18;
+FILLET_R = 3 * mm;
 
 module jwedge(){
   intersection(){
@@ -68,10 +69,10 @@ module jwedge(){
     }
 
     // round edges
-    translate([0, 1.5*mm, 1.5*mm])
+    translate([0, FILLET_R, FILLET_R])
       minkowski(){
-      cube([X, Y - 3 * mm, Z - 3 * mm]);
-      rotate(v=[0,1, 0], a=90)cylinder(r=1.5*mm,h=10);
+      cube([X, Y - 2 * FILLET_R, Z - 2 * FILLET_R]);
+      rotate(v=[0,1, 0], a=90)cylinder(r=FILLET_R,h=10);
     }
   }
 }
