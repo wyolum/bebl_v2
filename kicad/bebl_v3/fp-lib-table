@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name bebl_v2_pretty)(type KiCad)(uri ${KIPRJMOD}/libs/bebl_v2.pretty)(options "")(descr "bebl_v2_pretty footprints"))
+  (lib (name bebl_v2_legacy)(type Legacy)(uri ${KIPRJMOD}/libs/bebl_v2.mod)(options "")(descr "bebl_v2_legacy footprints"))
+)
