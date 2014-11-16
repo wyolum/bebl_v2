@@ -1,10 +1,10 @@
 (module PIN_ARRAY-3X1 (layer F.Cu) (tedit 54662B56)
   (descr "Connecteur 6 pins")
   (tags "CONN DEV")
-  (fp_text reference P7 (at -2.54 2.032) (layer F.SilkS)
+  (fp_text reference P6 (at -2.54 2.032) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1016)))
   )
-  (fp_text value GPS_UP501 (at 3.81 2.032) (layer F.SilkS)
+  (fp_text value LED_1 (at 3.81 2.032) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1016)))
   )
   (fp_line (start 3.81 -0.635) (end 3.81 0.635) (layer F.SilkS) (width 0.15))
@@ -52,12 +52,7 @@
   (pad 1 thru_hole rect (at -2.54 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 2 thru_hole circle (at 0 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 3 thru_hole circle (at 2.54 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
-  (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pins_array_6x1.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pins_array_6x1.wrl
+  (model /home/samata/projects-git/bebl_v2/kicad/bebl_v3/3d_modules/pin_strip_3.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
