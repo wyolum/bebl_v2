@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BC847BDW1T1G
+D MAT02, Precision Dual Monolithic Transistor, Low Noise, Low Offset, Vce 40V, Ic 20mA, TO-78
+K Precision Dual Monolithic Transistor Low Noise EOL
+F http://www.elenota.pl/datasheet_download/93431/MAT02
+$ENDCMP
+#
 $CMP MOSFET_N
 F transistors/mos/*.*
 $ENDCMP

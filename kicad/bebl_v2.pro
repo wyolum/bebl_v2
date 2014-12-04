@@ -1,4 +1,4 @@
-update=Friday 31 October 2014 11:52:35 AM IST
+update=Friday 05 December 2014 12:06:05 AM IST
 version=1
 last_client=kicad
 [cvpcb]
@@ -37,5 +37,6 @@ LibDir=
 [eeschema/libraries]
 LibName1=libs/bebl_v2
 LibName2=libs/power
+LibName3=transistors
 [general]
 version=1
