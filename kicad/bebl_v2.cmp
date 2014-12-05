@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Wednesday 29 October 2014 10:26:42 PM IST
+Cmp-Mod V01 Created by Cvpcb (2014-12-01 BZR 5309)-product   date = Fri Dec  5 17:09:05 2014
 
 BeginCmp
 TimeStamp = /5431218A;
@@ -44,42 +44,21 @@ EndCmp
 
 BeginCmp
 TimeStamp = /5431223E;
-Reference = B10;
-ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout_smd;
-EndCmp
-
-BeginCmp
-TimeStamp = /54312252;
-Reference = B11;
-ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout_smd;
-EndCmp
-
-BeginCmp
-TimeStamp = /54312266;
-Reference = B12;
-ValeurCmp = I/O;
-IdModule  = bebl_v2_pretty:breakout_smd;
-EndCmp
-
-BeginCmp
-TimeStamp = /5431227A;
-Reference = B13;
+Reference = B7;
 ValeurCmp = I/O;
 IdModule  = bebl_v2_pretty:breakout_smd;
 EndCmp
 
 BeginCmp
 TimeStamp = /54491858;
-Reference = B14;
+Reference = B8;
 ValeurCmp = LiPo+;
 IdModule  = bebl_v2_pretty:batt_clip;
 EndCmp
 
 BeginCmp
 TimeStamp = /54491E64;
-Reference = B15;
+Reference = B9;
 ValeurCmp = LiPo-;
 IdModule  = bebl_v2_pretty:batt_clip;
 EndCmp
@@ -113,16 +92,16 @@ IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54480598;
+TimeStamp = /5415E493;
 Reference = C5;
-ValeurCmp = 10uF;
+ValeurCmp = 4u7;
 IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54480FBE;
+TimeStamp = /5415E4EE;
 Reference = C6;
-ValeurCmp = 1uF;
+ValeurCmp = 4u7;
 IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
@@ -134,9 +113,9 @@ IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /5415E493;
+TimeStamp = /5415D64B;
 Reference = C8;
-ValeurCmp = 4u7;
+ValeurCmp = 10uF;
 IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
@@ -148,99 +127,71 @@ IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /5415D64B;
+TimeStamp = /542E7DC9;
 Reference = C10;
-ValeurCmp = 10uF;
+ValeurCmp = 100nF;
 IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /542E7DC9;
+TimeStamp = /542E7DD7;
 Reference = C11;
 ValeurCmp = 100nF;
 IdModule  = bebl_v2_pretty:c_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /5415E4EE;
-Reference = C12;
-ValeurCmp = 4u7;
-IdModule  = bebl_v2_pretty:c_0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /542E7DD7;
-Reference = C13;
-ValeurCmp = 100nF;
-IdModule  = bebl_v2_pretty:c_0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /5431586D;
+TimeStamp = /54819582/5481AF27;
 Reference = D1;
-ValeurCmp = DRL;
-IdModule  = bebl_v2_pretty:LED-5MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /54487929;
-Reference = D2;
-ValeurCmp = LED_R;
-IdModule  = bebl_v2_pretty:LED-5MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /54487F12;
-Reference = D3;
-ValeurCmp = LED_R;
-IdModule  = bebl_v2_pretty:LED-5MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5448813C;
-Reference = D4;
-ValeurCmp = LED_R;
-IdModule  = bebl_v2_pretty:LED-5MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /5448836F;
-Reference = D5;
-ValeurCmp = LED_R;
-IdModule  = bebl_v2_pretty:LED-5MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /544885AB;
-Reference = D6;
-ValeurCmp = LED_R;
-IdModule  = bebl_v2_pretty:LED-5MM;
-EndCmp
-
-BeginCmp
-TimeStamp = /544818B2;
-Reference = D7;
-ValeurCmp = RB520S-30TE61;
-IdModule  = bebl_v2_pretty:Diode-EMD2;
-EndCmp
-
-BeginCmp
-TimeStamp = /5415E4A0;
-Reference = D8;
 ValeurCmp = CHG;
 IdModule  = bebl_v2_pretty:LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /5447F75A;
-Reference = L1;
-ValeurCmp = 10uH;
-IdModule  = bebl_v2_pretty:Inductor_NLCV32;
+TimeStamp = /54819582/5481A805;
+Reference = D2;
+ValeurCmp = LED_B;
+IdModule  = bebl_v2_pretty:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A80C;
+Reference = D3;
+ValeurCmp = LED_P;
+IdModule  = bebl_v2_pretty:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A813;
+Reference = D4;
+ValeurCmp = LED_P;
+IdModule  = bebl_v2_pretty:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A81A;
+Reference = D5;
+ValeurCmp = LED_P;
+IdModule  = bebl_v2_pretty:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A821;
+Reference = D6;
+ValeurCmp = LED_P;
+IdModule  = bebl_v2_pretty:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A828;
+Reference = D7;
+ValeurCmp = LED_D;
+IdModule  = bebl_v2_pretty:LED-5MM;
 EndCmp
 
 BeginCmp
 TimeStamp = /5415D384;
-Reference = L2;
+Reference = L1;
 ValeurCmp = 4u7;
 IdModule  = bebl_v2_pretty:Inductor_LQH3NPN;
 EndCmp
@@ -260,59 +211,108 @@ IdModule  = bebl_v2_pretty:PIN_ARRAY-6X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4E1ED2A7;
-Reference = P3;
-ValeurCmp = LiPo;
-IdModule  = bebl_v2_pretty:pin_strip_2;
-EndCmp
-
-BeginCmp
-TimeStamp = /5415F287;
-Reference = P4;
-ValeurCmp = USB-Micro;
-IdModule  = bebl_v2_pretty:USB_B_Micro;
-EndCmp
-
-BeginCmp
 TimeStamp = /544F0628;
-Reference = P8;
-ValeurCmp = DRL_LED;
+Reference = P3;
+ValeurCmp = LED_1;
 IdModule  = bebl_v2_pretty:pin_socket_2;
 EndCmp
 
 BeginCmp
 TimeStamp = /544E73AB;
-Reference = P9;
-ValeurCmp = LED_DRV;
-IdModule  = bebl_v2_pretty:pin_strip_2;
-EndCmp
-
-BeginCmp
-TimeStamp = /544F01FA;
-Reference = P10;
-ValeurCmp = LED_DRL;
-IdModule  = bebl_v2_pretty:pin_strip_2;
-EndCmp
-
-BeginCmp
-TimeStamp = /544E68CF;
-Reference = P11;
-ValeurCmp = DRV_LED;
+Reference = P4;
+ValeurCmp = LED_2;
 IdModule  = bebl_v2_pretty:pin_socket_2;
 EndCmp
 
 BeginCmp
+TimeStamp = /544F01FA;
+Reference = P5;
+ValeurCmp = LED_3;
+IdModule  = bebl_v2_pretty:pin_socket_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /544E68CF;
+Reference = P6;
+ValeurCmp = LED_PWR;
+IdModule  = bebl_v2_pretty:pin_socket_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5415F287;
+Reference = P7;
+ValeurCmp = USB-Micro;
+IdModule  = bebl_v2_pretty:USB_B_Micro;
+EndCmp
+
+BeginCmp
 TimeStamp = /544F00AA;
-Reference = P12;
+Reference = P8;
 ValeurCmp = CHG_LED;
 IdModule  = bebl_v2_pretty:pin_socket_2;
 EndCmp
 
 BeginCmp
-TimeStamp = /544EF97E;
-Reference = P13;
+TimeStamp = /4E1ED2A7;
+Reference = P9;
+ValeurCmp = Ext_LiPo;
+IdModule  = bebl_v2_pretty:pin_socket_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481AF2E;
+Reference = P10;
 ValeurCmp = LED_CHG;
 IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481DC0C;
+Reference = P11;
+ValeurCmp = LED_1;
+IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481DBFE;
+Reference = P12;
+ValeurCmp = LED_2;
+IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481DC05;
+Reference = P13;
+ValeurCmp = LED_3;
+IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481DBF7;
+Reference = P14;
+ValeurCmp = LED_PWR;
+IdModule  = bebl_v2_pretty:pin_strip_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A835;
+Reference = Q1;
+ValeurCmp = BC847BDW1T1G;
+IdModule  = bebl_v2_pretty:SOT23-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A843;
+Reference = Q2;
+ValeurCmp = BC847BDW1T1G;
+IdModule  = bebl_v2_pretty:SOT23-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A851;
+Reference = Q3;
+ValeurCmp = BC847BDW1T1G;
+IdModule  = bebl_v2_pretty:SOT23-6;
 EndCmp
 
 BeginCmp
@@ -337,37 +337,65 @@ IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54315771;
+TimeStamp = /544EC93F;
 Reference = R4;
-ValeurCmp = 140E;
-IdModule  = bebl_v2_pretty:r_0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /54483532;
-Reference = R5;
-ValeurCmp = 12.4E;
+ValeurCmp = 10k;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /5415E4B4;
-Reference = R6;
+Reference = R5;
 ValeurCmp = 150E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /5415E508;
-Reference = R7;
+Reference = R6;
 ValeurCmp = 2k;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /544EC93F;
+TimeStamp = /54819582/5481A86B;
+Reference = R7;
+ValeurCmp = 56E;
+IdModule  = bebl_v2_pretty:r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A872;
 Reference = R8;
-ValeurCmp = 10k;
+ValeurCmp = 56E;
+IdModule  = bebl_v2_pretty:r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A879;
+Reference = R9;
+ValeurCmp = 56E;
+IdModule  = bebl_v2_pretty:r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A880;
+Reference = R10;
+ValeurCmp = 56E;
+IdModule  = bebl_v2_pretty:r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A887;
+Reference = R11;
+ValeurCmp = 56E;
+IdModule  = bebl_v2_pretty:r_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54819582/5481A88E;
+Reference = R12;
+ValeurCmp = 56E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
@@ -449,31 +477,24 @@ IdModule  = bebl_v2_pretty:TQFP32;
 EndCmp
 
 BeginCmp
-TimeStamp = /5447E023;
-Reference = U2;
-ValeurCmp = FAN5346;
-IdModule  = bebl_v2_pretty:SOT23-6;
-EndCmp
-
-BeginCmp
-TimeStamp = /542E7DA5;
-Reference = U3;
-ValeurCmp = ADXL345;
-IdModule  = bebl_v2_pretty:ADXL345;
-EndCmp
-
-BeginCmp
 TimeStamp = /5415E477;
-Reference = U4;
+Reference = U2;
 ValeurCmp = MCP73831;
 IdModule  = bebl_v2_pretty:SOT23-5;
 EndCmp
 
 BeginCmp
 TimeStamp = /5415CD74;
-Reference = U5;
+Reference = U3;
 ValeurCmp = TPS61221DCK;
 IdModule  = bebl_v2_pretty:SOT23-6_LDO;
+EndCmp
+
+BeginCmp
+TimeStamp = /542E7DA5;
+Reference = U4;
+ValeurCmp = ADXL345;
+IdModule  = bebl_v2_pretty:ADXL345;
 EndCmp
 
 BeginCmp
