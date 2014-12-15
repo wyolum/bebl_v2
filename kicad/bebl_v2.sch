@@ -2,7 +2,6 @@ EESchema Schematic File Version 2
 LIBS:bebl_v2
 LIBS:power
 LIBS:transistors
-LIBS:bebl_v2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
