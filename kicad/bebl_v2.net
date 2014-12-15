@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/anool/projects-git/bebl_v2/kicad/bebl_v2.sch)
-    (date "Fri Dec  5 17:09:17 2014")
-    (tool "Eeschema (2014-12-01 BZR 5309)-product"))
+    (source /home/samata/projects-git/bebl_v2/kicad/bebl_v2.sch)
+    (date "Sunday 14 December 2014 09:59:25 PM IST")
+    (tool "Eeschema 0.201412131231+5320~19~ubuntu14.10.1-product"))
   (components
     (comp (ref C2)
       (value 22p)
@@ -470,25 +470,91 @@
       (sheetpath (names /LED_brd/) (tstamps /54819582/))
       (tstamp 5481DC0C)))
   (libparts
-    (libpart (lib bebl_v2) (part ADXL345)
+    (libpart (lib bebl_v2) (part BC847BDW1T1G)
+      (description "MAT02, Precision Dual Monolithic Transistor, Low Noise, Low Offset, Vce 40V, Ic 20mA, TO-78")
+      (docs http://www.elenota.pl/datasheet_download/93431/MAT02)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) BC847BDW1T1G)
+        (field (name Footprint) SOT-363))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name C) (type passive))
+        (pin (num 4) (name E) (type passive))
+        (pin (num 5) (name B) (type input))
+        (pin (num 6) (name C) (type passive))))
+    (libpart (lib bebl_v2) (part R2)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R2))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib bebl_v2) (part TPS61221DCK)
       (fields
         (field (name Reference) U)
-        (field (name Value) ADXL345))
+        (field (name Value) TPS61221DCK))
       (pins
-        (pin (num 1) (name VDD) (type power_in))
-        (pin (num 2) (name GND) (type passive))
-        (pin (num 3) (name NC) (type passive))
-        (pin (num 4) (name GND1) (type passive))
-        (pin (num 5) (name GND2) (type passive))
-        (pin (num 6) (name VSS) (type power_in))
-        (pin (num 7) (name CS) (type passive))
-        (pin (num 8) (name INT1) (type passive))
-        (pin (num 9) (name INT2) (type passive))
-        (pin (num 10) (name NC) (type passive))
-        (pin (num 11) (name NC) (type passive))
-        (pin (num 12) (name SDO) (type passive))
-        (pin (num 13) (name SDA) (type passive))
-        (pin (num 14) (name SCL) (type passive))))
+        (pin (num 1) (name VIN) (type power_in))
+        (pin (num 2) (name FB) (type passive))
+        (pin (num 3) (name GND) (type input))
+        (pin (num 4) (name VOUT) (type power_out))
+        (pin (num 5) (name L) (type passive))
+        (pin (num 6) (name EN) (type passive))))
+    (libpart (lib bebl_v2) (part DIODE_LED)
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE_LED))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib bebl_v2) (part CONN_6)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_6))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))
+        (pin (num 4) (name 4) (type passive))
+        (pin (num 5) (name 5) (type passive))
+        (pin (num 6) (name 6) (type passive))))
+    (libpart (lib bebl_v2) (part CONN_2)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_2))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name PM) (type passive))))
+    (libpart (lib bebl_v2) (part I/O)
+      (fields
+        (field (name Reference) B)
+        (field (name Value) I/O))
+      (pins
+        (pin (num 1) (name 1) (type passive))))
+    (libpart (lib bebl_v2) (part INDUCTOR2)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR2))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib bebl_v2) (part CRYSTAL)
+      (fields
+        (field (name Reference) X)
+        (field (name Value) CRYSTAL))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
     (libpart (lib bebl_v2) (part ATMEGA8-AI)
       (footprints
         (fp TQFP32))
@@ -529,46 +595,6 @@
         (pin (num 30) (name "PD0(RXD)") (type BiDi))
         (pin (num 31) (name "PD1(TXD)") (type BiDi))
         (pin (num 32) (name "PD2(INT0)") (type BiDi))))
-    (libpart (lib bebl_v2) (part BC847BDW1T1G)
-      (description "MAT02, Precision Dual Monolithic Transistor, Low Noise, Low Offset, Vce 40V, Ic 20mA, TO-78")
-      (docs http://www.elenota.pl/datasheet_download/93431/MAT02)
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) BC847BDW1T1G)
-        (field (name Footprint) SOT-363))
-      (pins
-        (pin (num 1) (name E) (type passive))
-        (pin (num 2) (name B) (type input))
-        (pin (num 3) (name C) (type passive))
-        (pin (num 4) (name E) (type passive))
-        (pin (num 5) (name B) (type input))
-        (pin (num 6) (name C) (type passive))))
-    (libpart (lib bebl_v2) (part CONN_2)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_2))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name PM) (type passive))))
-    (libpart (lib bebl_v2) (part CONN_6)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_6))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))
-        (pin (num 4) (name 4) (type passive))
-        (pin (num 5) (name 5) (type passive))
-        (pin (num 6) (name 6) (type passive))))
-    (libpart (lib bebl_v2) (part CRYSTAL)
-      (fields
-        (field (name Reference) X)
-        (field (name Value) CRYSTAL))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))))
     (libpart (lib bebl_v2) (part C_NPOL)
       (footprints
         (fp SM*)
@@ -591,29 +617,16 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib bebl_v2) (part DIODE_LED)
-      (footprints
-        (fp D?)
-        (fp S*))
+    (libpart (lib bebl_v2) (part MCP73831)
       (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE_LED))
+        (field (name Reference) U)
+        (field (name Value) MCP73831))
       (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib bebl_v2) (part I/O)
-      (fields
-        (field (name Reference) B)
-        (field (name Value) I/O))
-      (pins
-        (pin (num 1) (name 1) (type passive))))
-    (libpart (lib bebl_v2) (part INDUCTOR2)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR2))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
+        (pin (num 1) (name Stat) (type passive))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name Vbat) (type power_out))
+        (pin (num 4) (name Vin) (type power_in))
+        (pin (num 5) (name Prog) (type passive))))
     (libpart (lib bebl_v2) (part ISP)
       (fields
         (field (name Reference) P)
@@ -625,16 +638,6 @@
         (pin (num 4) (name 4) (type passive))
         (pin (num 5) (name 5) (type passive))
         (pin (num 6) (name 6) (type passive))))
-    (libpart (lib bebl_v2) (part MCP73831)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) MCP73831))
-      (pins
-        (pin (num 1) (name Stat) (type passive))
-        (pin (num 2) (name GND) (type input))
-        (pin (num 3) (name Vbat) (type power_out))
-        (pin (num 4) (name Vin) (type power_in))
-        (pin (num 5) (name Prog) (type passive))))
     (libpart (lib bebl_v2) (part R)
       (footprints
         (fp R?)
@@ -646,39 +649,10 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib bebl_v2) (part R2)
-      (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R2))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
     (libpart (lib bebl_v2) (part SCREW)
       (fields
         (field (name Reference) SC)
         (field (name Value) SCREW)))
-    (libpart (lib bebl_v2) (part SW_PUSH)
-      (fields
-        (field (name Reference) SW)
-        (field (name Value) SW_PUSH))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib bebl_v2) (part TPS61221DCK)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) TPS61221DCK))
-      (pins
-        (pin (num 1) (name VIN) (type power_in))
-        (pin (num 2) (name FB) (type passive))
-        (pin (num 3) (name GND) (type input))
-        (pin (num 4) (name VOUT) (type power_out))
-        (pin (num 5) (name L) (type passive))
-        (pin (num 6) (name EN) (type passive))))
     (libpart (lib bebl_v2) (part USB-Micro)
       (description "USB Mini B connector")
       (footprints
@@ -697,10 +671,36 @@
         (pin (num T3) (name T3) (type passive))
         (pin (num T4) (name T4) (type passive))
         (pin (num T5) (name T5) (type passive))
-        (pin (num T6) (name T6) (type passive)))))
+        (pin (num T6) (name T6) (type passive))))
+    (libpart (lib bebl_v2) (part ADXL345)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) ADXL345))
+      (pins
+        (pin (num 1) (name VDD) (type power_in))
+        (pin (num 2) (name GND) (type passive))
+        (pin (num 3) (name NC) (type passive))
+        (pin (num 4) (name GND1) (type passive))
+        (pin (num 5) (name GND2) (type passive))
+        (pin (num 6) (name VSS) (type power_in))
+        (pin (num 7) (name CS) (type passive))
+        (pin (num 8) (name INT1) (type passive))
+        (pin (num 9) (name INT2) (type passive))
+        (pin (num 10) (name NC) (type passive))
+        (pin (num 11) (name NC) (type passive))
+        (pin (num 12) (name SDO) (type passive))
+        (pin (num 13) (name SDA) (type passive))
+        (pin (num 14) (name SCL) (type passive))))
+    (libpart (lib bebl_v2) (part SW_PUSH)
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive)))))
   (libraries
     (library (logical bebl_v2)
-      (uri /home/anool/projects-git/bebl_v2/kicad/libs/bebl_v2.lib)))
+      (uri /home/samata/projects-git/bebl_v2/kicad/libs/bebl_v2.lib)))
   (nets
     (net (code 1) (name "Net-(U4-Pad11)")
       (node (ref U4) (pin 11)))
