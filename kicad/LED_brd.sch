@@ -2,6 +2,7 @@ EESchema Schematic File Version 2
 LIBS:bebl_v2
 LIBS:power
 LIBS:transistors
+LIBS:bebl_v2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -81,17 +82,6 @@ F 2 "bebl_v2_pretty:LED-5MM" H 5650 5850 60  0001 C CNN
 F 3 "" H 5650 5850 60  0000 C CNN
 	1    5650 5850
 	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR010
-U 1 1 5481A82F
-P 5925 6400
-F 0 "#PWR010" H 5925 6400 30  0001 C CNN
-F 1 "GND" H 5925 6330 30  0001 C CNN
-F 2 "" H 5925 6400 60  0001 C CNN
-F 3 "" H 5925 6400 60  0001 C CNN
-	1    5925 6400
-	1    0    0    -1  
 $EndComp
 $Comp
 L BC847BDW1T1G Q1
@@ -407,17 +397,6 @@ Wire Wire Line
 	3600 5300 3750 5300
 Wire Wire Line
 	3750 5300 3750 6400
-$Comp
-L GND #PWR011
-U 1 1 5481E313
-P 3750 6400
-F 0 "#PWR011" H 3750 6400 30  0001 C CNN
-F 1 "GND" H 3750 6330 30  0001 C CNN
-F 2 "" H 3750 6400 60  0001 C CNN
-F 3 "" H 3750 6400 60  0001 C CNN
-	1    3750 6400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 5100 3750 5100
 Wire Wire Line
@@ -434,4 +413,6 @@ Wire Wire Line
 	5875 2325 6525 2325
 Wire Wire Line
 	3725 2325 5425 2325
+Wire Wire Line
+	3750 6400 5925 6400
 $EndSCHEMATC
