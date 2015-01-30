@@ -1,4 +1,4 @@
-update=Thursday 29 January 2015 11:16:10 PM IST
+update=Fri Jan 30 19:24:19 2015
 version=1
 last_client=kicad
 [cvpcb]
@@ -38,5 +38,18 @@ LibDir=
 LibName1=libs/bebl_v2
 LibName2=libs/power
 LibName3=transistors
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/home/anool/projects-git/bebl_v2/kicad/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=39
 [general]
 version=1
