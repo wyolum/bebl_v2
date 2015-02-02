@@ -3,10 +3,10 @@
   (general
     (links 145)
     (no_connects 0)
-    (area 33.924999 37.924999 114.075001 82.075001)
+    (area 30.899999 22.275 131.708334 92.1)
     (thickness 1.6)
     (drawings 83)
-    (tracks 562)
+    (tracks 560)
     (zones 0)
     (modules 72)
     (nets 57)
@@ -66,9 +66,9 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x00130_80000001)
       (usegerberextensions false)
-      (excludeedgelayer true)
+      (excludeedgelayer false)
       (linewidth 0.100000)
       (plotframeref false)
       (viasonmask false)
@@ -85,11 +85,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 1)
+      (outputformat 4)
       (mirror false)
-      (drillshape 1)
+      (drillshape 2)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gerber/))
   )
 
   (net 0 "")
@@ -275,7 +275,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz -90 0 180))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/smt_batt_clip.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/smt_batt_clip.wrl
       (at (xyz 0.05 -0.4 -0.2))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz -90 0 180))
@@ -333,7 +333,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz -90 0 180))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/smt_batt_clip.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/smt_batt_clip.wrl
       (at (xyz 0.05 -0.4 -0.2))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz -90 0 180))
@@ -396,22 +396,22 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:pin_socket_2 (layer F.Cu) (tedit 54CB8ABB) (tstamp 544EEE8F)
+  (module bebl_v2_pretty:pin_socket_2 (layer F.Cu) (tedit 54CC8533) (tstamp 544EEE8F)
     (at 92 54 180)
     (descr "Pin strip 2pin")
     (tags "CONN DEV")
     (path /544F00AA)
-    (fp_text reference P8 (at -3.3 0 270) (layer F.SilkS)
+    (fp_text reference P8 (at 3.2 -0.9 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
-    (fp_text value CHG_LED (at 0 2.1 180) (layer F.SilkS)
+    (fp_text value CHG_LED (at -3.3 0 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_line (start -2.159 -1.2065) (end -2.159 -1.0795) (layer F.SilkS) (width 0.1524))
@@ -459,7 +459,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -522,7 +522,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -585,7 +585,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -648,7 +648,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -711,7 +711,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -770,43 +770,6 @@
     (pad 1 thru_hole circle (at 0 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask B.SilkS))
   )
 
-  (module bebl_v2_pretty:Switch_SMT locked (layer F.Cu) (tedit 5451DEB2) (tstamp 544E5774)
-    (at 59 59)
-    (descr "EVQ-Q2F03W Compatible")
-    (tags "Switch SMT")
-    (path /544EC7EE)
-    (attr smd)
-    (fp_text reference SW2 (at 0 0) (layer F.SilkS) hide
-      (effects (font (size 0.8 0.8) (thickness 0.15)))
-    )
-    (fp_text value MODE (at -4 0 90) (layer F.SilkS)
-      (effects (font (size 0.8 0.8) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end -1 0) (layer F.SilkS) (width 0.15))
-    (fp_line (start -2.4 -0.6) (end -2.4 0.6) (layer F.SilkS) (width 0.15))
-    (fp_line (start 2.4 0.6) (end 2.4 -0.6) (layer F.SilkS) (width 0.15))
-    (fp_line (start -2.4 1.8) (end 2.4 1.8) (layer F.SilkS) (width 0.15))
-    (fp_line (start 2.4 -1.8) (end -2.4 -1.8) (layer F.SilkS) (width 0.15))
-    (pad 1 smd rect (at 2.5 -1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
-      (net 8 GND))
-    (pad 2 smd rect (at 2.5 1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
-      (net 29 /MODE))
-    (pad 1 smd rect (at -2.5 -1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
-      (net 8 GND))
-    (pad 2 smd rect (at -2.5 1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
-      (net 29 /MODE))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/smd_push2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 0.6 0.8 0.8))
-      (rotate (xyz 0 0 90))
-    )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/smd_push2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 0.6 0.8 0.8))
-      (rotate (xyz 0 0 90))
-    )
-  )
-
   (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CB8C0D) (tstamp 544E5767)
     (at 53 79.5)
     (descr "SMT resistor, 0805")
@@ -815,7 +778,7 @@
     (fp_text reference R8 (at -2.7 0.1 90) (layer B.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 56E (at 0 0) (layer B.SilkS) hide
+    (fp_text value 22E (at 0 0) (layer B.SilkS) hide
       (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0.381 -1.0795) (end 1.9685 -1.0795) (layer B.SilkS) (width 0.1524))
@@ -834,7 +797,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -868,7 +831,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -902,7 +865,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -936,7 +899,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -970,7 +933,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1004,7 +967,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1038,7 +1001,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1072,19 +1035,19 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:c_0805 (layer F.Cu) (tedit 54CB8AA0) (tstamp 54545CF7)
+  (module bebl_v2_pretty:c_0805 (layer F.Cu) (tedit 54CC70B5) (tstamp 54545CF7)
     (at 70.5 49.5 180)
     (descr "SMT capacitor, 0805")
     (path /5415D64B)
     (attr smd)
-    (fp_text reference C8 (at 0 2 270) (layer F.SilkS)
+    (fp_text reference C8 (at -0.5 2 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_text value 10uF (at 0 0 180) (layer F.SilkS) hide
@@ -1106,7 +1069,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1140,7 +1103,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1174,7 +1137,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1208,7 +1171,7 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/C0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/C0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
@@ -1223,7 +1186,7 @@
     (fp_text reference D7 (at 0 -3.9 90) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
-    (fp_text value LED_D (at 0 3.81 90) (layer F.SilkS) hide
+    (fp_text value LED_B (at 0 3.81 90) (layer F.SilkS) hide
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_line (start 2.921 1.778) (end 2.921 -1.778) (layer F.SilkS) (width 0.15))
@@ -1246,7 +1209,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1284,7 +1247,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1322,7 +1285,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1337,7 +1300,7 @@
     (fp_text reference D4 (at 0 4.2 90) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
-    (fp_text value LED_B (at 0 3.81 90) (layer F.SilkS) hide
+    (fp_text value LED_D (at 0 3.81 90) (layer F.SilkS) hide
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_line (start 2.921 1.778) (end 2.921 -1.778) (layer F.SilkS) (width 0.15))
@@ -1360,7 +1323,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1398,7 +1361,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1436,7 +1399,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1480,7 +1443,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/cree_clm3c.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/cree_clm3c.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1520,22 +1483,22 @@
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/inductor_smd_do3316p.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/inductor_smd_do3316p.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:PIN_ARRAY-6X1 (layer F.Cu) (tedit 54CB8ACF) (tstamp 54545E48)
+  (module bebl_v2_pretty:PIN_ARRAY-6X1 (layer F.Cu) (tedit 54CC8679) (tstamp 54545E48)
     (at 74 60 180)
     (descr "Connecteur 6 pins")
     (tags "CONN DEV")
     (path /4DCB971F)
-    (fp_text reference P2 (at -2.5 2.1 180) (layer F.SilkS)
+    (fp_text reference P2 (at 1.3 2.3 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
-    (fp_text value FTDI (at 0 2.1 180) (layer F.SilkS)
+    (fp_text value FTDI (at 0 2.7 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_line (start -5.461 -1.2065) (end -5.461 -1.0795) (layer F.SilkS) (width 0.1524))
@@ -1615,7 +1578,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pins_array_6x1.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pins_array_6x1.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1649,7 +1612,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1683,7 +1646,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1717,7 +1680,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1751,7 +1714,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1785,7 +1748,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1874,7 +1837,7 @@
       (scale (xyz 0.6 0.8 0.8))
       (rotate (xyz 0 0 90))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/smd_push2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/smd_push2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.6 0.8 0.8))
       (rotate (xyz 0 0 90))
@@ -1977,7 +1940,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/tqfp32.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/tqfp32.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2039,7 +2002,7 @@
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 90))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/LGA_adxl345.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/LGA_adxl345.wrl
       (at (xyz -0.03937 0.07874 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 90))
@@ -2080,7 +2043,7 @@
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
@@ -2127,7 +2090,7 @@
       (scale (xyz 0.08 0.08 0.08))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.08 0.08 0.08))
       (rotate (xyz 0 0 0))
@@ -2161,7 +2124,7 @@
       (scale (xyz 0.35 0.3 0.5))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/crystal_4pins_smd.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/crystal_4pins_smd.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.35 0.3 0.5))
       (rotate (xyz 0 0 0))
@@ -2318,7 +2281,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pin_strip_3x2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_3x2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2385,7 +2348,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/usb_B_micro_smd.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/usb_B_micro_smd.wrl
       (at (xyz -0.05 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -2461,14 +2424,14 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:pin_socket_2 (layer F.Cu) (tedit 54CB8B2D) (tstamp 548F047B)
+  (module bebl_v2_pretty:pin_socket_2 (layer F.Cu) (tedit 54CC8527) (tstamp 548F047B)
     (at 92 46 180)
     (descr "Pin strip 2pin")
     (tags "CONN DEV")
@@ -2476,8 +2439,8 @@
     (fp_text reference P6 (at 3.2 -0.1 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
-    (fp_text value LED_PWR (at 0 -3.1115 180) (layer F.SilkS)
-      (effects (font (size 0.762 0.762) (thickness 0.1016)))
+    (fp_text value LED_PWR (at -3.3 0 270) (layer F.SilkS)
+      (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_line (start -2.159 -1.2065) (end -2.159 -1.0795) (layer F.SilkS) (width 0.1524))
     (fp_line (start -2.286 -1.2065) (end -2.286 -0.9525) (layer F.SilkS) (width 0.1524))
@@ -2524,7 +2487,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2587,7 +2550,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/female_pcb_pin_02.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2650,7 +2613,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2713,7 +2676,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2761,20 +2724,20 @@
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:SOT23-6 (layer B.Cu) (tedit 54CB8C91) (tstamp 548F04A0)
+  (module bebl_v2_pretty:SOT23-6 (layer B.Cu) (tedit 54CC6F66) (tstamp 548F04A0)
     (at 69 75 270)
     (descr SOT23-5)
     (path /54819582/5481A843)
     (attr smd)
     (fp_text reference Q2 (at -2.6 0 270) (layer B.SilkS)
-      (effects (font (size 0.8 0.8) (thickness 0.1)) (justify mirror))
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
     (fp_text value BC847BDW1T1G (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
@@ -2809,20 +2772,20 @@
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:SOT23-6 (layer B.Cu) (tedit 54CB8C98) (tstamp 548F04AA)
+  (module bebl_v2_pretty:SOT23-6 (layer B.Cu) (tedit 54CC6F9D) (tstamp 548F04AA)
     (at 89 75 270)
     (descr SOT23-5)
     (path /54819582/5481A851)
     (attr smd)
     (fp_text reference Q3 (at -2.4 0 270) (layer B.SilkS)
-      (effects (font (size 0.8 0.8) (thickness 0.1)) (justify mirror))
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
     (fp_text value BC847BDW1T1G (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
@@ -2857,7 +2820,7 @@
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.1 0.1 0.1))
       (rotate (xyz 0 0 0))
@@ -2891,7 +2854,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2906,7 +2869,7 @@
     (fp_text reference R7 (at -2.9 -0.1 270) (layer B.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 56E (at 0 -1.7145 180) (layer B.SilkS) hide
+    (fp_text value 22E (at 0 -1.7145 180) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start 0.381 -1.0795) (end 1.9685 -1.0795) (layer B.SilkS) (width 0.1524))
@@ -2925,22 +2888,22 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CB8C61) (tstamp 548F04BC)
+  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CC6F74) (tstamp 548F04BC)
     (at 65 79.5 180)
     (descr "SMT resistor, 0805")
     (path /54819582/5481A879)
     (attr smd)
     (fp_text reference R9 (at -2.8 0 270) (layer B.SilkS)
-      (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 56E (at 0 -1.7145 180) (layer B.SilkS) hide
+    (fp_text value 22E (at 0 -1.7145 180) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start 0.381 -1.0795) (end 1.9685 -1.0795) (layer B.SilkS) (width 0.1524))
@@ -2959,22 +2922,22 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CB8C65) (tstamp 548F04C2)
+  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CC6F80) (tstamp 548F04C2)
     (at 73 79.5)
     (descr "SMT resistor, 0805")
     (path /54819582/5481A880)
     (attr smd)
     (fp_text reference R10 (at -2.6 0 90) (layer B.SilkS)
-      (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 56E (at 0 -1.7145) (layer B.SilkS) hide
+    (fp_text value 22E (at 0 -1.7145) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start 0.381 -1.0795) (end 1.9685 -1.0795) (layer B.SilkS) (width 0.1524))
@@ -2993,22 +2956,22 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CB8C6C) (tstamp 548F04C8)
+  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CC6F8C) (tstamp 548F04C8)
     (at 83 79.5)
     (descr "SMT resistor, 0805")
     (path /54819582/5481A887)
     (attr smd)
     (fp_text reference R11 (at 2.7 0 90) (layer B.SilkS)
-      (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 56E (at 0 -1.7145) (layer B.SilkS) hide
+    (fp_text value 22E (at 0 -1.7145) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start 0.381 -1.0795) (end 1.9685 -1.0795) (layer B.SilkS) (width 0.1524))
@@ -3027,22 +2990,22 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CB8C71) (tstamp 548F04CE)
+  (module bebl_v2_pretty:r_0805 (layer B.Cu) (tedit 54CC6F97) (tstamp 548F04CE)
     (at 99.5 79.5 180)
     (descr "SMT resistor, 0805")
     (path /54819582/5481A88E)
     (attr smd)
     (fp_text reference R12 (at 2.8 0 270) (layer B.SilkS)
-      (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 56E (at 0 -1.7145 180) (layer B.SilkS) hide
+    (fp_text value 22E (at 0 -1.7145 180) (layer B.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1016)) (justify mirror))
     )
     (fp_line (start 0.381 -1.0795) (end 1.9685 -1.0795) (layer B.SilkS) (width 0.1524))
@@ -3061,13 +3024,86 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/justin/code/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
+  (module bebl_v2_pretty:Switch_SMT locked (layer F.Cu) (tedit 54CC707C) (tstamp 544E5774)
+    (at 59 59)
+    (descr "EVQ-Q2F03W Compatible")
+    (tags "Switch SMT")
+    (path /544EC7EE)
+    (attr smd)
+    (fp_text reference SW2 (at 0 1.2) (layer F.SilkS) hide
+      (effects (font (size 0.8 0.8) (thickness 0.15)))
+    )
+    (fp_text value MODE (at -4 0 90) (layer F.SilkS)
+      (effects (font (size 0.8 0.8) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end -1 0) (layer F.SilkS) (width 0.15))
+    (fp_line (start -2.4 -0.6) (end -2.4 0.6) (layer F.SilkS) (width 0.15))
+    (fp_line (start 2.4 0.6) (end 2.4 -0.6) (layer F.SilkS) (width 0.15))
+    (fp_line (start -2.4 1.8) (end 2.4 1.8) (layer F.SilkS) (width 0.15))
+    (fp_line (start 2.4 -1.8) (end -2.4 -1.8) (layer F.SilkS) (width 0.15))
+    (pad 1 smd rect (at 2.5 -1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
+      (net 8 GND))
+    (pad 2 smd rect (at 2.5 1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
+      (net 29 /MODE))
+    (pad 1 smd rect (at -2.5 -1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
+      (net 8 GND))
+    (pad 2 smd rect (at -2.5 1.2) (size 1.5 1) (layers F.Cu F.Paste F.Mask)
+      (net 29 /MODE))
+    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/smd_push2.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.6 0.8 0.8))
+      (rotate (xyz 0 0 90))
+    )
+    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/smd_push2.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.6 0.8 0.8))
+      (rotate (xyz 0 0 90))
+    )
+  )
+
+  (dimension 8 (width 0.15) (layer Dwgs.User)
+    (gr_text "8 mm" (at 119.3 75 90) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 92 71) (xy 120.1 71)))
+    (feature2 (pts (xy 92 79) (xy 120.1 79)))
+    (crossbar (pts (xy 118.5 79) (xy 118.5 71)))
+    (arrow1a (pts (xy 118.5 71) (xy 119.086421 72.126504)))
+    (arrow1b (pts (xy 118.5 71) (xy 117.913579 72.126504)))
+    (arrow2a (pts (xy 118.5 79) (xy 119.086421 77.873496)))
+    (arrow2b (pts (xy 118.5 79) (xy 117.913579 77.873496)))
+  )
+  (dimension 33 (width 0.15) (layer Dwgs.User)
+    (gr_text "33 mm" (at 75.5 85.799999) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 92 75) (xy 92 86.599999)))
+    (feature2 (pts (xy 59 75) (xy 59 86.599999)))
+    (crossbar (pts (xy 59 84.999999) (xy 92 84.999999)))
+    (arrow1a (pts (xy 92 84.999999) (xy 90.873496 85.58642)))
+    (arrow1b (pts (xy 92 84.999999) (xy 90.873496 84.413578)))
+    (arrow2a (pts (xy 59 84.999999) (xy 60.126504 85.58642)))
+    (arrow2b (pts (xy 59 84.999999) (xy 60.126504 84.413578)))
+  )
+  (dimension 25 (width 0.15) (layer Dwgs.User)
+    (gr_text 25mm (at 46.5 85.8) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 59 75) (xy 59 86.6)))
+    (feature2 (pts (xy 34 75) (xy 34 86.6)))
+    (crossbar (pts (xy 34 85) (xy 59 85)))
+    (arrow1a (pts (xy 59 85) (xy 57.873496 85.586421)))
+    (arrow1b (pts (xy 59 85) (xy 57.873496 84.413579)))
+    (arrow2a (pts (xy 34 85) (xy 35.126504 85.586421)))
+    (arrow2b (pts (xy 34 85) (xy 35.126504 84.413579)))
+  )
   (dimension 14 (width 0.15) (layer Dwgs.User)
     (gr_text 14mm (at 122.3 75 270) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3080,18 +3116,6 @@
     (arrow2a (pts (xy 121.5 68) (xy 120.913579 69.126504)))
     (arrow2b (pts (xy 121.5 68) (xy 122.086421 69.126504)))
   )
-  (dimension 7 (width 0.15) (layer Dwgs.User)
-    (gr_text 7mm (at 119.8 75 270) (layer Dwgs.User)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (feature1 (pts (xy 93.5 78.5) (xy 120.6 78.5)))
-    (feature2 (pts (xy 93.5 71.5) (xy 120.6 71.5)))
-    (crossbar (pts (xy 119 71.5) (xy 119 78.5)))
-    (arrow1a (pts (xy 119 78.5) (xy 118.413579 77.373496)))
-    (arrow1b (pts (xy 119 78.5) (xy 119.586421 77.373496)))
-    (arrow2a (pts (xy 119 71.5) (xy 118.413579 72.626504)))
-    (arrow2b (pts (xy 119 71.5) (xy 119.586421 72.626504)))
-  )
   (dimension 80 (width 0.15) (layer Dwgs.User)
     (gr_text 80mm (at 74 91.299999) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3103,18 +3127,6 @@
     (arrow1b (pts (xy 114 90.499999) (xy 112.873496 89.913578)))
     (arrow2a (pts (xy 34 90.499999) (xy 35.126504 91.08642)))
     (arrow2b (pts (xy 34 90.499999) (xy 35.126504 89.913578)))
-  )
-  (dimension 56.5 (width 0.15) (layer Dwgs.User)
-    (gr_text 56.5mm (at 65.25 85.799999) (layer Dwgs.User)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (feature1 (pts (xy 93.5 75) (xy 93.5 86.599999)))
-    (feature2 (pts (xy 37 75) (xy 37 86.599999)))
-    (crossbar (pts (xy 37 84.999999) (xy 93.5 84.999999)))
-    (arrow1a (pts (xy 93.5 84.999999) (xy 92.373496 85.58642)))
-    (arrow1b (pts (xy 93.5 84.999999) (xy 92.373496 84.413578)))
-    (arrow2a (pts (xy 37 84.999999) (xy 38.126504 85.58642)))
-    (arrow2b (pts (xy 37 84.999999) (xy 38.126504 84.413578)))
   )
   (dimension 10 (width 0.15) (layer Dwgs.User)
     (gr_text 10mm (at 49 88.8) (layer Dwgs.User)
@@ -3139,18 +3151,6 @@
     (arrow1b (pts (xy 44 88) (xy 42.873496 87.413579)))
     (arrow2a (pts (xy 34 88) (xy 35.126504 88.586421)))
     (arrow2b (pts (xy 34 88) (xy 35.126504 87.413579)))
-  )
-  (dimension 3 (width 0.15) (layer Dwgs.User)
-    (gr_text 3mm (at 31.5 85) (layer Dwgs.User)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (feature1 (pts (xy 37 75) (xy 37 86.6)))
-    (feature2 (pts (xy 34 75) (xy 34 86.6)))
-    (crossbar (pts (xy 34 85) (xy 37 85)))
-    (arrow1a (pts (xy 37 85) (xy 35.873496 85.586421)))
-    (arrow1b (pts (xy 37 85) (xy 35.873496 84.413579)))
-    (arrow2a (pts (xy 34 85) (xy 35.126504 85.586421)))
-    (arrow2b (pts (xy 34 85) (xy 35.126504 84.413579)))
   )
   (dimension 30 (width 0.15) (layer Dwgs.User)
     (gr_text "30.000 mm" (at 127.3 50 270) (layer Dwgs.User)
@@ -3251,11 +3251,11 @@
   (gr_text "(3V3)" (at 76.5 57.7 90) (layer B.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
-  (gr_text GRN (at 66.1 60 90) (layer B.SilkS)
-    (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
+  (gr_text GRN (at 67.7 57.1 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
   )
-  (gr_text BLK (at 82.7 60 90) (layer B.SilkS)
-    (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
+  (gr_text BLK (at 80.4 57.2 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "[- +]" (at 92 42.4 180) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
@@ -3815,11 +3815,12 @@
   (segment (start 89 75.6) (end 88.65 75.95) (width 0.3) (layer B.Cu) (net 42) (tstamp 54CB33DF))
   (segment (start 88.65 75.95) (end 87.7 75.95) (width 0.3) (layer B.Cu) (net 42) (tstamp 54CB33E0) (status 20))
   (segment (start 90.3 74.05) (end 89.35 74.05) (width 0.3) (layer B.Cu) (net 42) (status 10))
-  (segment (start 90.73 80.73) (end 90.73 79) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CB68C4) (status 20))
-  (segment (start 91 81) (end 90.73 80.73) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CB68C3))
-  (segment (start 91 81) (end 101 81) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CB68C1))
+  (segment (start 90.73 80.33) (end 90.73 79) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CC6FEE) (status 20))
+  (segment (start 92 81) (end 101 81) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CC6FE9))
   (segment (start 101 81) (end 105.05 76.95) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CB324B))
   (segment (start 105.05 76.95) (end 105.05 75) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CB324D) (status 20))
+  (segment (start 91.4 81) (end 90.73 80.33) (width 0.3) (layer F.Cu) (net 43) (tstamp 54CC6FEB))
+  (segment (start 92 81) (end 91.4 81) (width 0.3) (layer F.Cu) (net 43))
   (segment (start 60.27 47.46) (end 62.39 47.46) (width 0.3) (layer B.Cu) (net 44) (status 10))
   (segment (start 64.00036 45.84964) (end 68.20092 45.84964) (width 0.3) (layer B.Cu) (net 44) (status 20))
   (segment (start 62.39 47.46) (end 64.00036 45.84964) (width 0.3) (layer B.Cu) (net 44) (tstamp 54CB8A7D))
@@ -3860,21 +3861,18 @@
   (segment (start 85.6525 46.2) (end 88.8 46.2) (width 0.3) (layer F.Cu) (net 50) (status 10))
   (segment (start 51.3 75) (end 51.8 74.5) (width 0.3) (layer B.Cu) (net 51) (tstamp 54CB3349))
   (via (at 51.8 74.5) (size 0.889) (layers F.Cu B.Cu) (net 51))
-  (segment (start 55.4 78.3) (end 56.16 77.54) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CB3355))
-  (segment (start 56.16 77.54) (end 57.73 77.54) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CB3356) (status 20))
   (segment (start 50.3 75) (end 51.3 75) (width 0.3) (layer B.Cu) (net 51) (status 10))
-  (segment (start 52.7 78.3) (end 51.8 77.4) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CB335B))
-  (segment (start 51.8 77.4) (end 51.8 74.5) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CB335C))
-  (segment (start 55.4 78.3) (end 52.7 78.3) (width 0.3) (layer F.Cu) (net 51))
+  (segment (start 51.8 78.1) (end 52.3 78.6) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CC6FDE))
+  (segment (start 52.3 78.6) (end 56.67 78.6) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CC6FDF))
+  (segment (start 56.67 78.6) (end 57.73 77.54) (width 0.3) (layer F.Cu) (net 51) (tstamp 54CC6FE0))
+  (segment (start 51.8 74.5) (end 51.8 78.1) (width 0.3) (layer F.Cu) (net 51))
   (via (at 46.2 75) (size 0.889) (layers F.Cu B.Cu) (net 52))
-  (segment (start 46.2 75) (end 49.2 72) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB332F))
-  (segment (start 49.2 72) (end 54.6 72) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB3330))
-  (segment (start 54.6 72) (end 55.6 73) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB333A))
-  (segment (start 55.6 73) (end 55.6 75.8) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB333B))
-  (segment (start 55.6 75.8) (end 56.1 76.3) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB333C))
-  (segment (start 56.1 76.3) (end 59.03 76.3) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB333E))
-  (segment (start 59.03 76.3) (end 60.27 77.54) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CB3341) (status 20))
   (segment (start 47.7 75) (end 46.2 75) (width 0.3) (layer B.Cu) (net 52) (status 10))
+  (segment (start 46.2 78.9) (end 47 79.7) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CC6FCE))
+  (segment (start 47 79.7) (end 59.5 79.7) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CC6FD0))
+  (segment (start 59.5 79.7) (end 60.27 78.93) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CC6FD1))
+  (segment (start 60.27 78.93) (end 60.27 77.54) (width 0.3) (layer F.Cu) (net 52) (tstamp 54CC6FD3))
+  (segment (start 46.2 75) (end 46.2 78.9) (width 0.3) (layer F.Cu) (net 52))
   (segment (start 70.9 75) (end 71.4 74.5) (width 0.3) (layer B.Cu) (net 53) (tstamp 54CB33A3))
   (segment (start 71.4 74.5) (end 71.4 72.7) (width 0.3) (layer B.Cu) (net 53) (tstamp 54CB33A4))
   (segment (start 71.4 72.7) (end 70.8 72.1) (width 0.3) (layer B.Cu) (net 53) (tstamp 54CB33A5))
