@@ -39,3 +39,5 @@
 38;"P11";"pin_strip_2";1;"LED_1";;;
 39;"Q1,Q2,Q3";"SOT23-6";3;"BC847BDW1T1G";;;
 40;"SW2";"Switch_SMT";1;"MODE";;;
+41;"G***,G***";"OSHW_6mm";2;"LOGO";;;
+42;"G1";"Logo-WL3";1;"Logo-WL3";;;
