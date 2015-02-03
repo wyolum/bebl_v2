@@ -1,0 +1,24 @@
+### Module positions - created on Wednesday 04 February 2015 12:01:34 AM IST ###
+### Printed by Pcbnew version kicad 0.201501310101+5397~21~ubuntu14.10.1-product
+## Unit = inches, Angle = deg.
+## Side : F.Cu
+# Ref    Val                  Package         PosX       PosY        Rot     Side
+C5       4u7              c_0805              3.4606    -2.0472     270.0    F.Cu
+C6       4u7              c_0805              2.9331    -2.0472     270.0    F.Cu
+C7       10uF             c_0805              2.7756    -2.1457     180.0    F.Cu
+C8       10uF             c_0805              2.7756    -1.9488     180.0    F.Cu
+D1       CHG              LED-0805            4.0945    -2.9528       0.0    F.Cu
+G***     LOGO             OSHW_6mm            3.9469    -2.9528      90.0    F.Cu
+G***     LOGO             OSHW_6mm            3.0118    -1.6437      90.0    F.Cu
+G1       Logo-WL3         Logo-WL3            1.3287    -2.0965      90.0    F.Cu
+L1       4u7              Inductor_LQH3NPN    2.5984    -2.0472      90.0    F.Cu
+P7       USB-Micro        USB_B_Micro         4.3268    -1.9685     180.0    F.Cu
+R1       10k              r_0805              3.3031    -2.3228      90.0    F.Cu
+R4       10k              r_0805              2.5236    -2.3228      90.0    F.Cu
+R5       150E             r_0805              3.3346    -1.8189       0.0    F.Cu
+R6       2k               r_0805              3.3346    -1.9094       0.0    F.Cu
+SW1      RST              Switch_SMT          3.5039    -2.3228       0.0    F.Cu
+SW2      MODE             Switch_SMT          2.3228    -2.3228       0.0    F.Cu
+U2       MCP73831         SOT23-5             3.2165    -2.0472     270.0    F.Cu
+U3       TPS61221DCK      SOT23-6_LDO         2.7756    -2.0472      90.0    F.Cu
+## End

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/anool/projects-git/bebl_v2/kicad/bebl_v2.sch</source>
-    <date>Tue Feb  3 18:02:25 2015</date>
-    <tool>Eeschema (2014-12-11 BZR 5320)-product</tool>
+    <source>/home/samata/projects-git/bebl_v2/kicad/bebl_v2.sch</source>
+    <date>Wednesday 04 February 2015 12:02:10 AM IST</date>
+    <tool>Eeschema 0.201501310101+5397~21~ubuntu14.10.1-product</tool>
   </design>
   <components>
     <comp ref="C2">
@@ -445,21 +445,21 @@
     </comp>
     <comp ref="Q1">
       <value>BC847BDW1T1G</value>
-      <footprint>bebl_v2_pretty:SOT23-6</footprint>
+      <footprint>bebl_v2_pretty:SOT363</footprint>
       <libsource lib="bebl_v2" part="BC847BDW1T1G"/>
       <sheetpath names="/LED_brd/" tstamps="/54819582/"/>
       <tstamp>5481A835</tstamp>
     </comp>
     <comp ref="Q2">
       <value>BC847BDW1T1G</value>
-      <footprint>bebl_v2_pretty:SOT23-6</footprint>
+      <footprint>bebl_v2_pretty:SOT363</footprint>
       <libsource lib="bebl_v2" part="BC847BDW1T1G"/>
       <sheetpath names="/LED_brd/" tstamps="/54819582/"/>
       <tstamp>5481A843</tstamp>
     </comp>
     <comp ref="Q3">
       <value>BC847BDW1T1G</value>
-      <footprint>bebl_v2_pretty:SOT23-6</footprint>
+      <footprint>bebl_v2_pretty:SOT363</footprint>
       <libsource lib="bebl_v2" part="BC847BDW1T1G"/>
       <sheetpath names="/LED_brd/" tstamps="/54819582/"/>
       <tstamp>5481A851</tstamp>
@@ -550,24 +550,41 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="bebl_v2" part="DIODE_LED">
-      <footprints>
-        <fp>D?</fp>
-        <fp>S*</fp>
-      </footprints>
+    <libpart lib="bebl_v2" part="INDUCTOR2">
       <fields>
-        <field name="Reference">D</field>
-        <field name="Value">DIODE_LED</field>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR2</field>
       </fields>
       <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="bebl_v2" part="CONN_6">
+    <libpart lib="bebl_v2" part="SCREW">
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">SCREW</field>
+      </fields>
+    </libpart>
+    <libpart lib="bebl_v2" part="R2">
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="ISP">
       <fields>
         <field name="Reference">P</field>
-        <field name="Value">CONN_6</field>
+        <field name="Value">ISP</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
@@ -576,6 +593,21 @@
         <pin num="4" name="4" type="passive"/>
         <pin num="5" name="5" type="passive"/>
         <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="C_NPOL">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_NPOL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="bebl_v2" part="MCP73831">
@@ -600,106 +632,6 @@
         <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="bebl_v2" part="SCREW">
-      <fields>
-        <field name="Reference">SC</field>
-        <field name="Value">SCREW</field>
-      </fields>
-    </libpart>
-    <libpart lib="bebl_v2" part="INDUCTOR2">
-      <fields>
-        <field name="Reference">L</field>
-        <field name="Value">INDUCTOR2</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="ADXL345">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">ADXL345</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VDD" type="power_in"/>
-        <pin num="2" name="GND" type="passive"/>
-        <pin num="3" name="NC" type="passive"/>
-        <pin num="4" name="GND1" type="passive"/>
-        <pin num="5" name="GND2" type="passive"/>
-        <pin num="6" name="VSS" type="power_in"/>
-        <pin num="7" name="CS" type="passive"/>
-        <pin num="8" name="INT1" type="passive"/>
-        <pin num="9" name="INT2" type="passive"/>
-        <pin num="10" name="NC" type="passive"/>
-        <pin num="11" name="NC" type="passive"/>
-        <pin num="12" name="SDO" type="passive"/>
-        <pin num="13" name="SDA" type="passive"/>
-        <pin num="14" name="SCL" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="TPS61221DCK">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">TPS61221DCK</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VIN" type="power_in"/>
-        <pin num="2" name="FB" type="passive"/>
-        <pin num="3" name="GND" type="input"/>
-        <pin num="4" name="VOUT" type="power_out"/>
-        <pin num="5" name="L" type="passive"/>
-        <pin num="6" name="EN" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="R2">
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R2</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="SW_PUSH">
-      <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SW_PUSH</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="USB-Micro">
-      <description>USB Mini B connector</description>
-      <footprints>
-        <fp>USB-Mini-B-Jack</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">CON</field>
-        <field name="Value">USB-Micro</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VBUS" type="power_in"/>
-        <pin num="2" name="D-" type="BiDi"/>
-        <pin num="3" name="D+" type="BiDi"/>
-        <pin num="4" name="ID" type="BiDi"/>
-        <pin num="5" name="GND" type="power_in"/>
-        <pin num="T1" name="T1" type="passive"/>
-        <pin num="T2" name="T2" type="passive"/>
-        <pin num="T3" name="T3" type="passive"/>
-        <pin num="T4" name="T4" type="passive"/>
-        <pin num="T5" name="T5" type="passive"/>
-        <pin num="T6" name="T6" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="bebl_v2" part="CRYSTAL">
       <fields>
         <field name="Reference">X</field>
@@ -709,46 +641,6 @@
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
         <pin num="3" name="3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="CONN_2">
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_2</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="PM" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="R">
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="bebl_v2" part="C_POL">
-      <footprints>
-        <fp>SM*</fp>
-        <fp>C?</fp>
-        <fp>C1-1</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C_POL</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="bebl_v2" part="BC847BDW1T1G">
@@ -768,19 +660,38 @@
         <pin num="6" name="C" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="bebl_v2" part="C_NPOL">
-      <footprints>
-        <fp>SM*</fp>
-        <fp>C?</fp>
-        <fp>C1-1</fp>
-      </footprints>
+    <libpart lib="bebl_v2" part="CONN_2">
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C_NPOL</field>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_2</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="PM" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="CONN_6">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="SW_PUSH">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="bebl_v2" part="ATMEGA8-AI">
@@ -827,24 +738,113 @@
         <pin num="32" name="PD2(INT0)" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="bebl_v2" part="ISP">
+    <libpart lib="bebl_v2" part="C_POL">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
       <fields>
-        <field name="Reference">P</field>
-        <field name="Value">ISP</field>
+        <field name="Reference">C</field>
+        <field name="Value">C_POL</field>
       </fields>
       <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-        <pin num="5" name="5" type="passive"/>
-        <pin num="6" name="6" type="passive"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="TPS61221DCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61221DCK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="FB" type="passive"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="VOUT" type="power_out"/>
+        <pin num="5" name="L" type="passive"/>
+        <pin num="6" name="EN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="ADXL345">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADXL345</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="NC" type="passive"/>
+        <pin num="4" name="GND1" type="passive"/>
+        <pin num="5" name="GND2" type="passive"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="CS" type="passive"/>
+        <pin num="8" name="INT1" type="passive"/>
+        <pin num="9" name="INT2" type="passive"/>
+        <pin num="10" name="NC" type="passive"/>
+        <pin num="11" name="NC" type="passive"/>
+        <pin num="12" name="SDO" type="passive"/>
+        <pin num="13" name="SDA" type="passive"/>
+        <pin num="14" name="SCL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="USB-Micro">
+      <description>USB Mini B connector</description>
+      <footprints>
+        <fp>USB-Mini-B-Jack</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">USB-Micro</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="ID" type="BiDi"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="T1" name="T1" type="passive"/>
+        <pin num="T2" name="T2" type="passive"/>
+        <pin num="T3" name="T3" type="passive"/>
+        <pin num="T4" name="T4" type="passive"/>
+        <pin num="T5" name="T5" type="passive"/>
+        <pin num="T6" name="T6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="R">
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bebl_v2" part="DIODE_LED">
+      <footprints>
+        <fp>D?</fp>
+        <fp>S*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE_LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
     <library logical="bebl_v2">
-      <uri>/home/anool/projects-git/bebl_v2/kicad/libs/bebl_v2.lib</uri>
+      <uri>/home/samata/projects-git/bebl_v2/kicad/libs/bebl_v2.lib</uri>
     </library>
   </libraries>
   <nets>
