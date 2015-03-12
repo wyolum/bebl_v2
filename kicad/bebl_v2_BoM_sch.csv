@@ -21,7 +21,7 @@ C5,4u7,bebl_v2_pretty:c_0805,
 R5,150E,bebl_v2_pretty:r_0805,
 C6,4u7,bebl_v2_pretty:c_0805,
 R6,2k,bebl_v2_pretty:r_0805,
-P7,USB-Micro,bebl_v2_pretty:USB_B_Micro,
+P7,USB-Micro,bebl_v2_pretty:USB_B_Micro_seeed,
 C4,100n,bebl_v2_pretty:c_0805,
 U4,ADXL345,bebl_v2_pretty:ADXL345,
 C10,100nF,bebl_v2_pretty:c_0805,,,CAP FILM 0.1UF 63VDC RADIAL,100nF, 63V,R82,Kemet,R82DC3100AA50J,Digikey,399-5863-ND,http://www.digikey.com/product-detail/en/R82DC3100AA50J/399-5863-ND/2571298?cur=USD
