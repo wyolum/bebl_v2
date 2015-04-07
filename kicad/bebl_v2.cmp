@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb 0.201412131231+5320~19~ubuntu14.10.1-product   date = Monday 15 December 2014 09:13:41 PM IST
+Cmp-Mod V01 Created by Cvpcb 0.201503050816+5478~22~ubuntu14.10.1-product   date = Thursday 12 March 2015 08:15:56 PM IST
 
 BeginCmp
 TimeStamp = /5431218A;
@@ -150,7 +150,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54819582/5481A805;
 Reference = D2;
-ValeurCmp = LED_B;
+ValeurCmp = LED_P;
 IdModule  = bebl_v2_pretty:LED-5MM;
 EndCmp
 
@@ -164,7 +164,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54819582/5481A813;
 Reference = D4;
-ValeurCmp = LED_P;
+ValeurCmp = LED_D;
 IdModule  = bebl_v2_pretty:LED-5MM;
 EndCmp
 
@@ -185,7 +185,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54819582/5481A828;
 Reference = D7;
-ValeurCmp = LED_D;
+ValeurCmp = LED_B;
 IdModule  = bebl_v2_pretty:LED-5MM;
 EndCmp
 
@@ -242,7 +242,7 @@ BeginCmp
 TimeStamp = /5415F287;
 Reference = P7;
 ValeurCmp = USB-Micro;
-IdModule  = bebl_v2_pretty:USB_B_Micro;
+IdModule  = bebl_v2_pretty:USB_B_Micro_seeed;
 EndCmp
 
 BeginCmp
@@ -298,21 +298,21 @@ BeginCmp
 TimeStamp = /54819582/5481A835;
 Reference = Q1;
 ValeurCmp = BC847BDW1T1G;
-IdModule  = bebl_v2_pretty:SOT23-6;
+IdModule  = bebl_v2_pretty:SOT363;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A843;
 Reference = Q2;
 ValeurCmp = BC847BDW1T1G;
-IdModule  = bebl_v2_pretty:SOT23-6;
+IdModule  = bebl_v2_pretty:SOT363;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A851;
 Reference = Q3;
 ValeurCmp = BC847BDW1T1G;
-IdModule  = bebl_v2_pretty:SOT23-6;
+IdModule  = bebl_v2_pretty:SOT363;
 EndCmp
 
 BeginCmp
@@ -360,42 +360,42 @@ EndCmp
 BeginCmp
 TimeStamp = /54819582/5481A86B;
 Reference = R7;
-ValeurCmp = 56E;
+ValeurCmp = 22E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A872;
 Reference = R8;
-ValeurCmp = 56E;
+ValeurCmp = 22E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A879;
 Reference = R9;
-ValeurCmp = 56E;
+ValeurCmp = 22E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A880;
 Reference = R10;
-ValeurCmp = 56E;
+ValeurCmp = 22E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A887;
 Reference = R11;
-ValeurCmp = 56E;
+ValeurCmp = 22E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /54819582/5481A88E;
 Reference = R12;
-ValeurCmp = 56E;
+ValeurCmp = 22E;
 IdModule  = bebl_v2_pretty:r_0805;
 EndCmp
 

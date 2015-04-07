@@ -178,7 +178,7 @@ F 2 "bebl_v2_pretty:c_0805" H 700 3350 60  0001 C CNN
 F 3 "" H 700 3350 60  0001 C CNN
 F 4 "490-1734-1-ND" H 700 3550 60  0001 C CNN "Digikey"
 	1    700  3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L C_NPOL C1

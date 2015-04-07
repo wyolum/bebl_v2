@@ -1,4 +1,4 @@
-update=Saturday 31 January 2015 09:29:33 PM IST
+update=Thursday 12 March 2015 09:43:56 PM IST
 version=1
 last_client=kicad
 [cvpcb]
@@ -41,7 +41,7 @@ LibName3=transistors
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/home/anool/projects-git/bebl_v2/kicad/
+PlotDirectoryName=gerber/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

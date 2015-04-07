@@ -178,7 +178,7 @@ F 2 "bebl_v2_pretty:c_0805" H 700 3350 60  0001 C CNN
 F 3 "" H 700 3350 60  0001 C CNN
 F 4 "490-1734-1-ND" H 700 3550 60  0001 C CNN "Digikey"
 	1    700  3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L C_NPOL C1
@@ -593,7 +593,7 @@ U 1 1 5415F287
 P 7650 1350
 F 0 "P7" H 7075 1425 50  0000 C CNN
 F 1 "USB-Micro" H 6925 1350 50  0000 C CNN
-F 2 "bebl_v2_pretty:USB_B_Micro" H 7650 1350 60  0001 C CNN
+F 2 "bebl_v2_pretty:USB_B_Micro_seeed" H 7650 1350 60  0001 C CNN
 F 3 "" H 7650 1350 60  0000 C CNN
 	1    7650 1350
 	1    0    0    -1  
