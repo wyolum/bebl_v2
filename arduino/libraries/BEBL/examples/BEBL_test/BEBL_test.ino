@@ -1,8 +1,11 @@
 #include "Wire.h"
 #include "ADXL345.h"
 
-int LEDS[] = {5, 6, 7, 9, 10, 13};
-int n_led = 6;
+//int LEDS[] = {5, 6, 7, 9, 10, 13};
+//int n_led = 6;
+
+int LEDS[] = {5, 6, 7, 10, 13};
+int n_led = 5;
 
 ADXL345 Accel;
 
