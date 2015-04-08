@@ -1,11 +1,8 @@
 #include "Wire.h"
 #include "ADXL345.h"
 
-//int LEDS[] = {5, 6, 7, 9, 10, 13};
-//int n_led = 6;
-
-int LEDS[] = {5, 6, 7, 10, 13};
-int n_led = 5;
+int LEDS[] = {5, 6, 7, 9, 10, 13};
+int n_led = 6;
 
 ADXL345 Accel;
 
@@ -17,7 +14,7 @@ void setup(){
   Accel.powerOn();
   Accel.set_bw(ADXL345_BW_3); // 3 6 12 25 50 100 200 400 800 1600
   // Accel.set_bw(ADXL345_BW_1600);
-  sweep(500);
+  sweep(50);
 }
 
 void sweep(int d){
@@ -51,7 +48,15 @@ void loop(){
     length = sqrt(length);
     Serial.print(length);
     Serial.println("");
-
+    
+    if(acc_data[2] < 0){
+      int led_i = (int)(-n_led * acc_data[2]);
+      for(i=0; i<n_led; i++){
+	digitalWrite(LEDS[i], LOW);
+      }
+      digitalWrite(LEDS[led_i], HIGH);
+    }
+    /*
     for(i=0; i<n_led; i++){
       if(acc_data[2] < -.1 * (i + 1)){
 	digitalWrite(LEDS[i], HIGH);
@@ -59,7 +64,7 @@ void loop(){
       else{
 	digitalWrite(LEDS[i], LOW);
       }
-    }
+      }*/
   }
   else{
     Serial.print("ERROR: ADXL345 data read error:");
