@@ -14,7 +14,7 @@ void setup(){
   Accel.powerOn();
   Accel.set_bw(ADXL345_BW_3); // 3 6 12 25 50 100 200 400 800 1600
   // Accel.set_bw(ADXL345_BW_1600);
-  sweep(50);
+  sweep(500);
 }
 
 void sweep(int d){
