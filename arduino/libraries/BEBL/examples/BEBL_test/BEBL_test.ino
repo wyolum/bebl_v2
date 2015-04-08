@@ -49,10 +49,13 @@ void loop(){
     Serial.print(length);
     Serial.println("");
 
-    digitalWrite(LEDS[led], LOW);
-    led = 0;
-    if(acc_data[2] < -.1){
-      digitalWrite(LEDS[led], HIGH);
+    for(i=0; i<n_led; i++){
+      if(acc_data[2] < -.1 * (i + 1)){
+	digitalWrite(LEDS[i], HIGH);
+      }
+      else{
+	digitalWrite(LEDS[i], LOW);
+      }
     }
   }
   else{
