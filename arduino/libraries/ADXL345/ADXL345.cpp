@@ -31,9 +31,10 @@ ADXL345::ADXL345() {
 void ADXL345::powerOn() {
   Wire.begin();        // join i2c bus (address optional for master)
   //Turning on the ADXL345
-  writeTo(ADXL345_POWER_CTL, 0);      
-  writeTo(ADXL345_POWER_CTL, 16);
-  writeTo(ADXL345_POWER_CTL, 8); 
+  // writeTo(ADXL345_POWER_CTL, 0);      
+  // writeTo(ADXL345_POWER_CTL, 16);
+  // writeTo(ADXL345_POWER_CTL, 8); 
+  writeTo(ADXL345_POWER_CTL, 0b00101000); 
 }
 
 // Reads the acceleration into three variable x, y and z
