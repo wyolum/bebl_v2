@@ -21,7 +21,7 @@ int INTERRUPT_1 = 2;
 int INTERRUPT_2 = 3;
 
 bool event_pending[2];
-
+void AccelSetup();
 void setup(){
   pinMode(INTERRUPT_1, INPUT);
   pinMode(INTERRUPT_2, INPUT);
@@ -31,7 +31,15 @@ void setup(){
   for(int i=0; i<n_led; i++){
     pinMode(LEDS[i], OUTPUT);
   }
+  AccelSetup();
+  sweep(10);
+  lastWakeTime = millis();
+}
 
+// this also gets called when waking from sleep. we should probably figure out
+// what's needed only on wakeup
+void AccelSetup(){
+  
   // configure accel
   Accel.set_bw(ADXL345_BW_3); // 3 6 12 25 50 100 200 400 800 1600
   //Accel.set_bw(ADXL345_BW_1600);
@@ -84,8 +92,6 @@ void setup(){
   attachInterrupt(0, interrupt_handler0, RISING);
   attachInterrupt(1, interrupt_handler1, RISING);
   Accel.powerOn();
-  sweep(10);
-  lastWakeTime = millis();
 }
 void interrupt_handler0(){
   event_pending[0] = true;
@@ -124,7 +130,13 @@ void loop(){
     Serial.println(" event0");
     event_pending[0] = false;
     bool0 = !bool0;
-    digitalWrite(LEDS[0], bool0);
+      // first turn off all the LEDs
+    for(int i=0; i<n_led - 1; i++){
+      digitalWrite(LEDS[i],HIGH);
+      delay(200);
+      digitalWrite(LEDS[i], LOW);
+      delay(100);
+    }
     goToSleep();
   }
   if(event_pending[1]){
@@ -181,14 +193,9 @@ void loop(){
 
 void goToSleep(){ 
   Serial.println("Going to Sleep");
+  detachInterrupt(0);// we don't want to keep getting interrupted when waking
 
-  // first turn off all the LEDs
-    for(int i=0; i<n_led - 1; i++){
-      pinMode(LEDS[i],OUTPUT);
-      digitalWrite(LEDS[i], LOW);
-    }
-
-  delay(500);
+  delay(100);
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
   sleep_enable();
   //attachInterrupt(0,wake,RISING); // pin 2 intterupt Inactivity
@@ -212,7 +219,7 @@ void goToSleep(){
   power_timer1_enable();
   power_timer2_enable(); 
   Serial.println("waking up");
-  setup();
+  AccelSetup();
 
   //Serial.println("returning from sleep");
   lastWakeTime = millis();
