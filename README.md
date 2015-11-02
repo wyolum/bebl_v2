@@ -7,6 +7,7 @@ bebl_v2
 
 ![bebl LED board](https://github.com/wyolum/bebl_v2/blob/master/kicad/images/bebl_v2_08.png)
 
+![bebl with 3D printed housing](https://github.com/wyolum/bebl_v2/blob/master/fabricate/bebl_v2.png)
 
 
 License
