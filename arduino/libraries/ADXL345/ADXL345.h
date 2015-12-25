@@ -95,7 +95,8 @@ public:
   bool status;           // set when error occurs 
                          // see error code for details
   byte error_code;       // Initial state
-  double gains[3];        // counts to Gs
+  double gains[3];       // counts to Gs
+  double offsets[3];     // counts offset to zero
 
   ADXL345();
   void powerOn();

@@ -8,10 +8,15 @@ ADXL345 Accel;
 // int LEDS[] = {5, 6, 7, 9, 10, 13}; // top to bottom
 int LEDS[] = {7, 9, 6, 10, 5, 13}; // top to bottom
 
-int n_led = 6;
+int n_led = 3;
 
 int INTERRUPT_1 = 2;
 int INTERRUPT_2 = 3;
+
+// low pass filter acc_data in place
+void filter(){
+  
+}
 
 void setup(){
   Serial.begin(115200);
@@ -155,14 +160,14 @@ void loop(){
 	  Serial.println("ACTIVE");
 	}
 	last_acc_data[i] = acc_data[i];
-	Serial.print(acc_data[i]);
-	Serial.print(" ");
+	// Serial.print(acc_data[i]);
+	// Serial.print(" ");
       }
       length = sqrt(length);
-      Serial.print(length);
-      Serial.print(" ");
-      Serial.print(acc_last_activity);
-      Serial.println("");
+      // Serial.print(length);
+      // Serial.print(" ");
+      // Serial.print(acc_last_activity);
+      // Serial.println("");
     
       /*
 	if(acc_data[2] < 0){

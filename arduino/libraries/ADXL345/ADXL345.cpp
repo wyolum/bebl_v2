@@ -22,10 +22,20 @@
 ADXL345::ADXL345() {
   status = ADXL345_OK;
   error_code = ADXL345_NO_ERROR;
+  double maxes[] = {257, 
+		    265, 
+		    270.};
+  double mins[] = {-253, 
+		   -241, 
+		   -225.};
 
-  gains[0] = 0.00376390;
-  gains[1] = 0.00376009;
-  gains[2] = 0.00349265;
+  for(int i=0; i < 3; i++){
+    gains[i] = 1/((maxes[i] - mins[i])/2.);
+    offsets[i] = (maxes[i] + mins[i]) / 2.;
+  }
+  //gains[0] = 1; // 0.00376390;
+  //gains[1] = 1; // 0.00376009;
+  //gains[2] = 1; // 0.00349265;
 }
 
 void ADXL345::powerOn() {
@@ -56,7 +66,7 @@ void ADXL345::get_Gxyz(double *xyz){
   int xyz_int[3];
   readAccel(xyz_int);
   for(i=0; i<3; i++){
-    xyz[i] = xyz_int[i] * gains[i];
+    xyz[i] = (xyz_int[i] - offsets[i]) * gains[i];
   }
 }
 // Writes val to address register on device
