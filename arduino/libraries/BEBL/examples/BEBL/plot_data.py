@@ -5,8 +5,8 @@ import scipy.signal
 sample_period = 12e-3
 dt = sample_period
 sample_rate = 1 / sample_period
-fmax = 5.
-down_fmax = 1.
+fmax = 2.
+down_fmax = .1
 
 N = 2
 Wn = fmax / sample_rate
@@ -15,10 +15,13 @@ ff, fb = scipy.signal.butter(N, Wn, btype='low', analog=False, output='ba')
 down_ff, down_fb = scipy.signal.butter(N, down_Wn, btype='low', analog=False, output='ba')
 print 'sample_rate:', sample_rate, 'Hz'
 print 'Bandwidth:', sample_rate/2, 'Hz'
-print 'ff = {', ', '.join(map(str, ff)), '};'
-print 'fb = {', ', '.join(map(str, fb)), '};'
-print 'down_ff = {', ', '.join(map(str, down_ff)), '};'
-print 'down_fb = {', ', '.join(map(str, down_fb)), '};'
+print '//', Wn * sample_rate, 'Hz'
+print 'double ff_taps[] = {', ', '.join(map(str, ff)), '};'
+print 'double fb_taps[] = {', ', '.join(map(str, fb)), '};'
+
+print '//', down_Wn * sample_rate, 'Hz'
+print 'double up_ff_taps[] = {', ', '.join(map(str, down_ff)), '};'
+print 'double up_fb_taps[] = {', ', '.join(map(str, down_fb)), '};'
 data = open('data.txt').readlines()
 data = [l.split() for l in data]
 data = array([map(float, l) for l in data if len(l) == 9])

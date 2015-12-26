@@ -24,25 +24,20 @@ double cooked[N_FILTER_CHANNEL];
 double up[N_FILTER_CHANNEL];
 double back[N_FILTER_CHANNEL];
 double breaking = 0;
-double breaking_threshold = 0.06;
+double breaking_threshold = 0.1;
 
 double in_data[N_TAP * N_FILTER_CHANNEL];
 double out_data[N_TAP * N_FILTER_CHANNEL];
 double up_in_data[N_UP_TAP * N_FILTER_CHANNEL];
 double up_out_data[N_UP_TAP * N_FILTER_CHANNEL];
 
-// feed forward
-double ff_taps[] = { 0.0078202080335, 0.015640416067, 0.0078202080335 };
-
-// feed back
-double fb_taps[] = { 1.0, -1.73472576881, 0.766006600943 };
-
-// Slower filter for up traking, BW=0.050000
-// feed forward
-double up_ff_taps[] = { 0.000346041337639, 0.000692082675278, 0.000346041337639 };
-// feed back
-double up_fb_taps[] = { 1.0, -1.94669754076, 0.948081706107 };
-
+// 2.0 Hz
+double ff_taps[] = { 0.00134871194836, 0.00269742389671, 0.00134871194836 };
+double fb_taps[] = { 1.0, -1.89346414636, 0.898858994155 };
+// 0.1 Hz
+double up_ff_taps[] = { 3.54360709978e-06, 7.08721419957e-06, 3.54360709978e-06 };
+double up_fb_taps[] = { 1.0, -1.99466855305, 0.994682727481 };
+ 
 // apply IIR filter with coeff from _ff_taps and _fb_taps
 // to each of N_FILTER_CHANNEL accel channels
 double apply_filter(double _raw, double *_in_data, double *_out_data, int n_tap, double *_ff_taps, double *_fb_taps){
@@ -279,7 +274,7 @@ void loop(){
       }
     }
     if(millis() - acc_last_activity > ATTENTION_SPAN){
-      go_to_sleep();
+      // go_to_sleep();
     }
   }
 }
