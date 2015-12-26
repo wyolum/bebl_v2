@@ -15,18 +15,21 @@ const int INTERRUPT_1 = 2;
 const int INTERRUPT_2 = 3;
 const int N_FILTER_CHANNEL = 3;
 const int N_TAP = 3;
-const int N_DOWN_TAP = 3;
+const int N_UP_TAP = 3;
 
 // variable for filtered accel data
-double volatile cooked[N_FILTER_CHANNEL];
+double cooked[N_FILTER_CHANNEL];
 
-// variable for filtered down data
-double volatile down[N_FILTER_CHANNEL];
+// variable for filtered up data
+double up[N_FILTER_CHANNEL];
+double back[N_FILTER_CHANNEL];
+double breaking = 0;
+double breaking_threshold = 0.06;
 
 double in_data[N_TAP * N_FILTER_CHANNEL];
 double out_data[N_TAP * N_FILTER_CHANNEL];
-double down_in_data[N_DOWN_TAP * N_FILTER_CHANNEL];
-double down_out_data[N_DOWN_TAP * N_FILTER_CHANNEL];
+double up_in_data[N_UP_TAP * N_FILTER_CHANNEL];
+double up_out_data[N_UP_TAP * N_FILTER_CHANNEL];
 
 // feed forward
 double ff_taps[] = { 0.0078202080335, 0.015640416067, 0.0078202080335 };
@@ -34,11 +37,11 @@ double ff_taps[] = { 0.0078202080335, 0.015640416067, 0.0078202080335 };
 // feed back
 double fb_taps[] = { 1.0, -1.73472576881, 0.766006600943 };
 
-// Slower filter for down traking, BW=0.050000
+// Slower filter for up traking, BW=0.050000
 // feed forward
-double down_ff_taps[] = { 5.62480979076e-05, 0.000112496195815, 5.62480979076e-05 };
+double up_ff_taps[] = { 0.000346041337639, 0.000692082675278, 0.000346041337639 };
 // feed back
-double down_fb_taps[] = { 1.0, -1.97867495733, 0.978899949723 };
+double up_fb_taps[] = { 1.0, -1.94669754076, 0.948081706107 };
 
 // apply IIR filter with coeff from _ff_taps and _fb_taps
 // to each of N_FILTER_CHANNEL accel channels
@@ -74,6 +77,25 @@ void get_acc_data(double *acc_data){
   Accel.get_Gxyz(acc_data);
 }
 
+double dot3(double *v, double* w){
+  double out = 0;
+  for(int i=0; i<3; i++){
+    out += v[i] * w[i];
+  }
+  return out;
+}
+
+double norm(double *v3){
+  return sqrt(dot3(v3, v3));
+}
+
+void normalize(double *v3){
+  double n = norm(v3);
+  for(int i=0; i < 3; i++){
+    v3[i] /= n;
+  }
+}
+
 // make call to get_acc_data() and apply IIR filter
 void get_cooked(){
   int i, j;
@@ -82,25 +104,24 @@ void get_cooked(){
   get_acc_data(acc_data);
   for(i = 0; i < N_FILTER_CHANNEL; i++){
     cooked[i] = apply_filter(acc_data[i], in_data + i * N_TAP, out_data + i * N_TAP, N_TAP, ff_taps, fb_taps);
-    down[i] = apply_filter(acc_data[i], down_in_data + i * N_DOWN_TAP, down_out_data + i * N_DOWN_TAP, N_DOWN_TAP, down_ff_taps, down_fb_taps);
+    up[i] = apply_filter(acc_data[i], up_in_data + i * N_UP_TAP, up_out_data + i * N_UP_TAP, N_UP_TAP, up_ff_taps, up_fb_taps);
   }
+  back[0] = up[2] * up[0];
+  back[1] = up[2] * up[1];
+  back[2] = -1 + up[2] * up[2];
+  normalize(back);
+  breaking = dot3(cooked, back);
+  /*
   for(i = 0; i < N_FILTER_CHANNEL; i++){
-    Serial.print(acc_data[i], 8);
+    Serial.print(breaking, 8);
     Serial.print(" ");
     Serial.print(cooked[i], 8);
     Serial.print(" ");
-    Serial.print(down[i], 8);
+    Serial.print(back[i], 8);
     Serial.print(" ");
-    /*
-    Serial.print(":");
-    for(j = 0; j < N_TAP; j++){
-      Serial.print(in_data[i * N_TAP + j]);
-      Serial.print(" ");
-    }
-    Serial.println();
-    */
   }
   Serial.println();
+  */
 }
 
 void setup(){
@@ -164,7 +185,7 @@ void setup(){
   Accel.powerOn();
 
   // flash leds in sequence with a delay of 10 ms
-  sweep(10);
+  sweep(100);
 }
 
 // if true, then there is an event that has not yet been handled.
@@ -204,14 +225,13 @@ const unsigned long ATTENTION_SPAN = 5 * MINUTES;
 const double ACC_ACTIVITY_THRESH = .1;
 // loop() counter
 int count = 0;
-int last_millis = 0;
+int last_ms = 0;
 
 const int sample_period_ms = 12;
 int next_sample_time_ms = 0;
 
 double last_acc_data[3];
 void loop(){
-  count++;
   byte source = Accel.getInterruptSource();
   if(event_pending[0] && event_pending[1]){
     Serial.println("\nBOTH");
@@ -236,57 +256,28 @@ void loop(){
   int i;
   double acc_data[3], acc_diff;
   
-  if(millis() > next_sample_time_ms){
+  int now_ms = millis();
+  if(now_ms > next_sample_time_ms){
+    count++;
     get_cooked();
     next_sample_time_ms += sample_period_ms;
+    if(count% 100 == 0){
+      Serial.println(now_ms - last_ms);
+      last_ms = now_ms;
+    }
   }
-  if(count% 1000 == 0){
-    if(is_awake){
-      if(Accel.status){
-	float length = 0.;
-	for(i = 0; i < 3; i++){
-	  length += (float)cooked[i] * (float)cooked[i];
-	  acc_diff = cooked[i] - last_acc_data[i];
-	  if(abs(acc_diff) > ACC_ACTIVITY_THRESH){
-	    acc_last_activity = millis();
-	    Serial.println("ACTIVE");
-	  }
-	  last_acc_data[i] = cooked[i];
-	  // Serial.print(cooked[i]);
-	  // Serial.print(" ");
-	}
-	// length = sqrt(length);
-	// Serial.print(length);
-	// Serial.print(" ");
-	// Serial.print(acc_last_activity);
-	// Serial.println("");
-    
-	/*
-	  if(acc_data[2] < 0){
-	  int led_i = (int)(-n_led * acc_data[2]);
-	  for(i=0; i<n_led; i++){
-	  digitalWrite(LEDS[i], LOW);
-	  }
-	  digitalWrite(LEDS[led_i], HIGH);
-	  }
-	*/
-	for(i=0; i<n_led; i++){
-	  if(acc_data[2] < -.025 * (i - i % 2) - .025){
-	    digitalWrite(LEDS[i], HIGH);
-	  }
-	  else{
-	    digitalWrite(LEDS[i], LOW);
-	  }
-	}
-      }
-      else{
-	Serial.print("ERROR: ADXL345 data read error:");
-	Serial.println(Accel.error_code);
-	digitalWrite(7, HIGH);
-	while(1) delay(1000);
+  if(is_awake){
+    Serial.println(breaking);
+    if(breaking > breaking_threshold){
+      for(i=0; i<n_led; i++){
+	digitalWrite(LEDS[i], HIGH);
       }
     }
-
+    else{
+      for(i=0; i<n_led; i++){
+	digitalWrite(LEDS[i], LOW);
+      }
+    }
     if(millis() - acc_last_activity > ATTENTION_SPAN){
       go_to_sleep();
     }
@@ -294,6 +285,7 @@ void loop(){
 }
 
 void go_to_sleep(){
+  Serial.println("SLEEP!");
   is_awake = false;
 }
 

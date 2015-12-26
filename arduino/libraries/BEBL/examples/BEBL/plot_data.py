@@ -6,7 +6,7 @@ sample_period = 12e-3
 dt = sample_period
 sample_rate = 1 / sample_period
 fmax = 5.
-down_fmax = .4
+down_fmax = 1.
 
 N = 2
 Wn = fmax / sample_rate
@@ -46,4 +46,6 @@ plot(time, sqrt(sum(data[:,1::3] ** 2, axis=1)), '-')
 # plot(time, sqrt(sum(data[:,2::3] ** 2, axis=1)), '-')
 # plot(fft.rfftfreq(len(data), sample_period), abs(D[:,::3]) ** 2)
 # plot(fft.rfftfreq(len(data), sample_period), abs(fD) ** 2, linewidth=3)
+figure();
+plot(time, data[:,0])
 show()
