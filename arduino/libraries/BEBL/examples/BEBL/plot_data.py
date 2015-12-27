@@ -5,8 +5,8 @@ import scipy.signal
 sample_period = 12e-3
 dt = sample_period
 sample_rate = 1 / sample_period
-fmax = 2.
-down_fmax = .1
+fmax = 1.
+down_fmax = .05
 
 N = 2
 Wn = fmax / sample_rate
@@ -25,6 +25,26 @@ print 'double up_fb_taps[] = {', ', '.join(map(str, down_fb)), '};'
 data = open('data.txt').readlines()
 data = [l.split() for l in data]
 data = array([map(float, l) for l in data if len(l) == 9])
+figure(1)
+title('up')
+up = data[:,0::3]
+back = data[:,2::3]
+
+plot(data[:,0 + 0])
+plot(data[:,0 + 3])
+plot(data[:,0 + 6])
+figure(2)
+title('cooked')
+plot(data[:,1])
+plot(data[:,1 + 3])
+plot(data[:,1 + 6])
+figure(3)
+title('back')
+plot(data[:,2])
+plot(data[:,2 + 3])
+plot(data[:,2 + 6])
+show()
+here
 # data = data - mean(data, axis=0)[newaxis]
 time = arange(len(data)) * dt
 
