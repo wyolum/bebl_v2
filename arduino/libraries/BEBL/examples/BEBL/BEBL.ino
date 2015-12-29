@@ -17,6 +17,17 @@ const int N_FILTER_CHANNEL = 3;
 const int N_TAP = 3;
 const int N_UP_TAP = 3;
 
+// LED toggle states
+bool bool0, bool1;
+unsigned long acc_last_activity_ms = 0;
+bool is_awake = true;
+
+const unsigned long MILLIS = 1;
+const unsigned long SECONDS = 1000 * MILLIS;
+const unsigned long MINUTES = 60 * SECONDS;
+const unsigned long ATTENTION_SPAN = 5 * MINUTES;
+const double ACC_ACTIVITY_THRESH = .05;
+
 // variable for filtered accel data
 double cooked[N_FILTER_CHANNEL];
 
@@ -108,6 +119,10 @@ void get_cooked(){
   for(i = 0; i < N_FILTER_CHANNEL; i++){
     cooked[i] = apply_filter(acc_data[i], in_data + i * N_TAP, out_data + i * N_TAP, N_TAP, ff_taps, fb_taps);
     up[i] = apply_filter(acc_data[i], up_in_data + i * N_UP_TAP, up_out_data + i * N_UP_TAP, N_UP_TAP, up_ff_taps, up_fb_taps);
+    if(abs(cooked[i] - up[i]) > ACC_ACTIVITY_THRESH){
+      // Serial.println("Activity");
+      acc_last_activity_ms = millis();
+    }
   }
   normalize(up);
   back[0] = up[2] * up[0];
@@ -209,16 +224,6 @@ void sweep(int d){
   }
 }
 
-// LED toggle states
-bool bool0, bool1;
-unsigned long acc_last_activity_ms = 0;
-bool is_awake = true;
-
-const unsigned long MILLIS = 1;
-const unsigned long SECONDS = 1000 * MILLIS;
-const unsigned long MINUTES = 60 * SECONDS;
-const unsigned long ATTENTION_SPAN = 1 * MINUTES;
-const double ACC_ACTIVITY_THRESH = .1;
 // loop() counter
 int count = 0;
 int last_ms = 0;
@@ -256,16 +261,16 @@ void loop(){
   double acc_data[3], acc_diff;
   
   int now_ms = millis();
+  if(count % 100 < 1){
+    digitalWrite(LEDS[0], HIGH);
+  }
+  else{
+    digitalWrite(LEDS[0], LOW);
+  }
   if(is_awake){
     if(now_ms > next_sample_time_ms){
       count++;
       get_cooked();
-      if(count % 100 < 1){
-	digitalWrite(LEDS[0], HIGH);
-      }
-      else{
-	digitalWrite(LEDS[0], LOW);
-      }
       /*
 	for(i = 0; i < N_FILTER_CHANNEL; i++){
 	Serial.print(up[i], 8);
@@ -278,8 +283,8 @@ void loop(){
 	Serial.println(braking);
       */
       next_sample_time_ms += sample_period_ms;
-      if(count% 100 == 0){
-	Serial.println(now_ms - last_ms);
+      if(count % 1000 == 0){
+	Serial.println((now_ms - last_ms)/1000.);
 	last_ms = now_ms;
       }
     }
