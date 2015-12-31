@@ -239,14 +239,28 @@ void set_cal_from_eeprom(){
   double mins[N_FILTER_CHANNEL];
   double maxes[N_FILTER_CHANNEL];
   int eeaddress = 0;
-
+  double low = 200;
+  double high = 300;
+    
+  bool load_cal = true; // only load reasonable values;
   for(int i=0; i < N_FILTER_CHANNEL; i++){
     eeaddress += sizeof(double);
     mins[i] = eeprom_read_dbl(eeaddress);
+    if(mins[i] > -low || mins[i] < -high){
+      load_cal = false;
+    }
     eeaddress += sizeof(double);
     maxes[i] = eeprom_read_dbl(eeaddress);
+    if(maxes[i] < low || maxes[i] > high){
+      load_cal = false;
+    }
   }
-  Accel.setCal(mins, maxes);
+  if(load_cal){
+    Accel.setCal(mins, maxes);
+  }
+  else{
+    Serial.println("recal required");
+  }
 }
 
 void setup(){
@@ -324,8 +338,8 @@ void setup(){
       Serial.println(" ");
     }
     Serial.println("");
-    set_cal_from_eeprom();
   }
+  set_cal_from_eeprom();
   saturate_filters(false); // fill digital filters with Gs
   // flash leds in sequence with a delay of 10 ms
   sweep(50);
