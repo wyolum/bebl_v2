@@ -19,23 +19,23 @@
 #define DEVICE (0x53)    // ADXL345 device address
 #define TO_READ (6)      // num of bytes we are going to read each time (two bytes for each axis)
 
+void ADXL345::setCal(double *mins, double *maxes){
+  for(int i=0; i < 3; i++){
+    gains[i] = 1/((maxes[i] - mins[i])/2.);
+    offsets[i] = (maxes[i] + mins[i]) / 2.;
+  }
+}
+
 ADXL345::ADXL345() {
   status = ADXL345_OK;
   error_code = ADXL345_NO_ERROR;
   double maxes[] = {257, 
 		    265, 
-		    270.};
+		    270.}; // defaults
   double mins[] = {-253, 
-		   -241, 
-		   -225.};
-
-  for(int i=0; i < 3; i++){
-    gains[i] = 1/((maxes[i] - mins[i])/2.);
-    offsets[i] = (maxes[i] + mins[i]) / 2.;
-  }
-  //gains[0] = 1; // 0.00376390;
-  //gains[1] = 1; // 0.00376009;
-  //gains[2] = 1; // 0.00349265;
+                   -241, 
+		   -225.}; // defaults
+  setCal(mins, maxes);
 }
 
 void ADXL345::powerOn() {

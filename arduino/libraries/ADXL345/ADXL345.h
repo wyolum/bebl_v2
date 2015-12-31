@@ -99,6 +99,7 @@ public:
   double offsets[3];     // counts offset to zero
 
   ADXL345();
+  void setCal(double *mins, double *maxes);
   void powerOn();
   void readAccel(int* xyx);
   void readAccel(int* x, int* y, int* z);
