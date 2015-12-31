@@ -224,7 +224,7 @@ bool is_awake = true;
 const unsigned long MILLIS = 1;
 const unsigned long SECONDS = 1000 * MILLIS;
 const unsigned long MINUTES = 60 * SECONDS;
-const unsigned long ATTENTION_SPAN = 1 * MINUTES;
+const unsigned long ATTENTION_SPAN = 5 * SECONDS;
 const double ACC_ACTIVITY_THRESH = .1;
 // loop() counter
 int count = 0;
@@ -282,17 +282,6 @@ void loop(){
       else{
 	digitalWrite(LEDS[0], LOW);
       }
-      /*
-	for(i = 0; i < N_FILTER_CHANNEL; i++){
-	Serial.print(up[i], 8);
-	Serial.print(" ");
-	Serial.print(cooked[i], 8);
-	Serial.print(" ");
-	Serial.print(back[i], 8);
-	Serial.print(" ");
-	}
-	Serial.println(braking);
-      */
       next_sample_time_ms += sample_period_ms;
       if(count% 100 == 0){
 	Serial.println(now_ms - last_ms);
