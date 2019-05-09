@@ -1,9 +1,6 @@
-(kicad_pcb (version 4) (host pcbnew 0.201504231001+5621~22~ubuntu14.10.1-product)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.2-f72e74a~84~ubuntu18.04.1)
 
   (general
-    (links 32)
-    (no_connects 0)
-    (area 25.192601 22.275 131.708334 92.1)
     (thickness 1.6)
     (drawings 28)
     (tracks 147)
@@ -14,14 +11,14 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user)
+    (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -44,8 +41,6 @@
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
-    (segment_width 0.15)
-    (edge_width 0.15)
     (via_size 0.9)
     (via_drill 0.4)
     (via_min_size 0.9)
@@ -55,6 +50,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.508)
     (uvia_min_drill 0.127)
+    (edge_width 0.15)
+    (segment_width 0.15)
     (pcb_text_width 0.15)
     (pcb_text_size 1 1)
     (mod_edge_width 0.15)
@@ -68,6 +65,9 @@
     (pcbplotparams
       (layerselection 0x011fc_80000001)
       (usegerberextensions true)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
       (excludeedgelayer false)
       (linewidth 0.100000)
       (plotframeref false)
@@ -76,8 +76,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
-      (hpglpenoverlay 2)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -89,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerber/))
+      (outputdirectory "gerber/"))
   )
 
   (net 0 "")
@@ -207,12 +206,7 @@
       (net 5 "Net-(D1-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 180) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask B.SilkS)
       (net 16 /LED_brd/LEDK))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model ${KIPRJMOD}/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -270,12 +264,7 @@
       (net 19 /LED_brd/LEDD3))
     (pad 2 thru_hole circle (at 1.27 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask B.SilkS)
       (net 20 /LED_brd/LEDP4))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model ${KIPRJMOD}/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -333,12 +322,7 @@
       (net 14 /LED_brd/3V3_LED))
     (pad 2 thru_hole circle (at 1.27 0 180) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask B.SilkS)
       (net 15 /LED_brd/GND_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model ${KIPRJMOD}/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -367,12 +351,7 @@
       (net 2 "Net-(D3-Pad1)"))
     (pad 2 smd rect (at -0.9525 0) (size 1.30048 1.4986) (layers B.Cu B.Paste B.Mask)
       (net 14 /LED_brd/3V3_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model ${KIPRJMOD}/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -405,12 +384,7 @@
       (net 12 "Net-(D7-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 13 "Net-(D7-Pad2)"))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model ${KIPRJMOD}/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -443,12 +417,7 @@
       (net 10 "Net-(D6-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 11 "Net-(D6-Pad2)"))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model ${KIPRJMOD}/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -481,12 +450,7 @@
       (net 4 "Net-(D5-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 9 "Net-(D5-Pad2)"))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model ${KIPRJMOD}/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -519,12 +483,7 @@
       (net 3 "Net-(D4-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 8 "Net-(D4-Pad2)"))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model ${KIPRJMOD}/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -557,12 +516,7 @@
       (net 2 "Net-(D3-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 7 "Net-(D3-Pad2)"))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model ${KIPRJMOD}/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -595,12 +549,7 @@
       (net 1 "Net-(D2-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 6 "Net-(D2-Pad2)"))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/led5_vertical.wrl
+    (model ${KIPRJMOD}/3d_modules/led5_vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -639,12 +588,7 @@
       (net 5 "Net-(D1-Pad1)"))
     (pad 2 smd rect (at 1.05 0) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask)
       (net 16 /LED_brd/LEDK))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/cree_clm3c.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/cree_clm3c.wrl
+    (model ${KIPRJMOD}/3d_modules/cree_clm3c.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -702,12 +646,7 @@
       (net 21 /LED_brd/LEDP5))
     (pad 2 thru_hole circle (at 1.27 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask B.SilkS)
       (net 22 /LED_brd/LEDB6))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model ${KIPRJMOD}/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -765,12 +704,7 @@
       (net 17 /LED_brd/LEDP1))
     (pad 2 thru_hole circle (at 1.27 0) (size 1.524 1.524) (drill 1.016) (layers *.Cu *.Mask B.SilkS)
       (net 18 /LED_brd/LEDP2))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/pin_strip_2.wrl
+    (model ${KIPRJMOD}/3d_modules/pin_strip_2.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -799,12 +733,7 @@
       (net 1 "Net-(D2-Pad1)"))
     (pad 2 smd rect (at -0.9525 0 180) (size 1.30048 1.4986) (layers B.Cu B.Paste B.Mask)
       (net 14 /LED_brd/3V3_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model ${KIPRJMOD}/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -833,12 +762,7 @@
       (net 3 "Net-(D4-Pad1)"))
     (pad 2 smd rect (at -0.9525 0 180) (size 1.30048 1.4986) (layers B.Cu B.Paste B.Mask)
       (net 14 /LED_brd/3V3_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model ${KIPRJMOD}/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -867,12 +791,7 @@
       (net 4 "Net-(D5-Pad1)"))
     (pad 2 smd rect (at -0.9525 0) (size 1.30048 1.4986) (layers B.Cu B.Paste B.Mask)
       (net 14 /LED_brd/3V3_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model ${KIPRJMOD}/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -901,12 +820,7 @@
       (net 10 "Net-(D6-Pad1)"))
     (pad 2 smd rect (at -0.9525 0) (size 1.30048 1.4986) (layers B.Cu B.Paste B.Mask)
       (net 14 /LED_brd/3V3_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model ${KIPRJMOD}/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -935,12 +849,7 @@
       (net 12 "Net-(D7-Pad1)"))
     (pad 2 smd rect (at -0.9525 0 180) (size 1.30048 1.4986) (layers B.Cu B.Paste B.Mask)
       (net 14 /LED_brd/3V3_LED))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/r_0805.wrl
+    (model ${KIPRJMOD}/3d_modules/r_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -977,55 +886,54 @@
       (xy 1.66624 2.76352) (xy 1.78816 2.84734) (xy 1.89992 2.921) (xy 1.9812 2.97434)
       (xy 2.02184 2.99466) (xy 2.02692 2.99466) (xy 2.06248 2.97434) (xy 2.12852 2.921)
       (xy 2.22504 2.82956) (xy 2.36474 2.6924) (xy 2.38506 2.66954) (xy 2.49936 2.55524)
-      (xy 2.5908 2.45872) (xy 2.6543 2.3876) (xy 2.67716 2.35712) (xy 2.67716 2.35712)
-      (xy 2.65684 2.31902) (xy 2.6035 2.2352) (xy 2.52984 2.1209) (xy 2.4384 1.98882)
-      (xy 2.19964 1.64338) (xy 2.33172 1.31572) (xy 2.37236 1.21666) (xy 2.42316 1.09474)
-      (xy 2.46126 1.00838) (xy 2.47904 0.97028) (xy 2.5146 0.95758) (xy 2.6035 0.93726)
-      (xy 2.73304 0.90932) (xy 2.88798 0.88138) (xy 3.0353 0.85344) (xy 3.16738 0.82804)
-      (xy 3.2639 0.81026) (xy 3.30708 0.80264) (xy 3.31724 0.79502) (xy 3.3274 0.7747)
-      (xy 3.33248 0.72898) (xy 3.33502 0.6477) (xy 3.33756 0.5207) (xy 3.33756 0.33782)
-      (xy 3.33756 0.3175) (xy 3.33502 0.14224) (xy 3.33248 0.00254) (xy 3.3274 -0.0889)
-      (xy 3.32232 -0.12446) (xy 3.32232 -0.12446) (xy 3.27914 -0.13462) (xy 3.18516 -0.15494)
-      (xy 3.05308 -0.18034) (xy 2.8956 -0.21082) (xy 2.88544 -0.21336) (xy 2.72796 -0.24384)
-      (xy 2.59334 -0.27178) (xy 2.5019 -0.2921) (xy 2.4638 -0.3048) (xy 2.45364 -0.31496)
-      (xy 2.42316 -0.37846) (xy 2.37744 -0.47498) (xy 2.3241 -0.59436) (xy 2.2733 -0.71882)
-      (xy 2.23012 -0.83058) (xy 2.19964 -0.9144) (xy 2.18948 -0.9525) (xy 2.18948 -0.9525)
-      (xy 2.21488 -0.9906) (xy 2.26822 -1.07188) (xy 2.34442 -1.18618) (xy 2.4384 -1.3208)
-      (xy 2.44348 -1.33096) (xy 2.53492 -1.46304) (xy 2.60858 -1.57734) (xy 2.65684 -1.65862)
-      (xy 2.67716 -1.69418) (xy 2.67462 -1.69672) (xy 2.64668 -1.73482) (xy 2.5781 -1.81102)
-      (xy 2.48158 -1.91262) (xy 2.36474 -2.032) (xy 2.32664 -2.06756) (xy 2.1971 -2.19456)
-      (xy 2.10566 -2.27838) (xy 2.04978 -2.32156) (xy 2.02438 -2.33172) (xy 2.02184 -2.33172)
-      (xy 1.9812 -2.30632) (xy 1.89738 -2.25044) (xy 1.78308 -2.17424) (xy 1.64846 -2.0828)
-      (xy 1.6383 -2.07518) (xy 1.50622 -1.98374) (xy 1.39446 -1.91008) (xy 1.31572 -1.85674)
-      (xy 1.28016 -1.83642) (xy 1.27508 -1.83642) (xy 1.2192 -1.85166) (xy 1.12522 -1.88468)
-      (xy 1.00838 -1.9304) (xy 0.88392 -1.9812) (xy 0.77216 -2.02692) (xy 0.68834 -2.06502)
-      (xy 0.65024 -2.08788) (xy 0.6477 -2.09042) (xy 0.635 -2.13868) (xy 0.61214 -2.23774)
-      (xy 0.58166 -2.3749) (xy 0.55118 -2.54) (xy 0.5461 -2.5654) (xy 0.51562 -2.72542)
-      (xy 0.49022 -2.85496) (xy 0.47244 -2.9464) (xy 0.46228 -2.9845) (xy 0.43942 -2.98958)
-      (xy 0.36322 -2.99466) (xy 0.24384 -2.9972) (xy 0.1016 -2.99974) (xy -0.0508 -2.99974)
-      (xy -0.19812 -2.99466) (xy -0.32258 -2.99212) (xy -0.41402 -2.9845) (xy -0.45212 -2.97688)
-      (xy -0.45212 -2.97434) (xy -0.46736 -2.92608) (xy -0.48768 -2.82702) (xy -0.51562 -2.68732)
-      (xy -0.54864 -2.52476) (xy -0.55372 -2.49428) (xy -0.5842 -2.3368) (xy -0.6096 -2.20726)
-      (xy -0.62992 -2.11582) (xy -0.64008 -2.08026) (xy -0.65278 -2.07264) (xy -0.71882 -2.0447)
-      (xy -0.8255 -2.00152) (xy -0.95758 -1.94818) (xy -1.26238 -1.82372) (xy -1.6383 -2.08026)
-      (xy -1.67132 -2.10312) (xy -1.80594 -2.1971) (xy -1.9177 -2.27076) (xy -1.9939 -2.31902)
-      (xy -2.02692 -2.3368) (xy -2.02946 -2.3368) (xy -2.06756 -2.30378) (xy -2.14122 -2.2352)
-      (xy -2.24282 -2.13614) (xy -2.35966 -2.01676) (xy -2.44856 -1.9304) (xy -2.55016 -1.82626)
-      (xy -2.6162 -1.75514) (xy -2.65176 -1.70942) (xy -2.66446 -1.68148) (xy -2.66192 -1.6637)
-      (xy -2.63652 -1.6256) (xy -2.58318 -1.54178) (xy -2.50444 -1.43002) (xy -2.413 -1.2954)
-      (xy -2.33934 -1.18618) (xy -2.25806 -1.05918) (xy -2.20472 -0.97028) (xy -2.18694 -0.9271)
-      (xy -2.19202 -0.90678) (xy -2.21742 -0.83566) (xy -2.2606 -0.7239) (xy -2.31902 -0.59182)
-      (xy -2.44856 -0.29464) (xy -2.6416 -0.25654) (xy -2.76098 -0.23622) (xy -2.92608 -0.2032)
-      (xy -3.08356 -0.17272) (xy -3.32994 -0.12446) (xy -3.33756 0.77978) (xy -3.29946 0.79502)
-      (xy -3.2639 0.80518) (xy -3.17246 0.8255) (xy -3.04292 0.8509) (xy -2.88798 0.87884)
-      (xy -2.75844 0.90424) (xy -2.62636 0.92964) (xy -2.52984 0.94742) (xy -2.4892 0.95758)
-      (xy -2.47904 0.97028) (xy -2.44602 1.03378) (xy -2.39776 1.13538) (xy -2.34696 1.2573)
-      (xy -2.29362 1.3843) (xy -2.2479 1.50114) (xy -2.21488 1.59004) (xy -2.20218 1.6383)
-      (xy -2.21996 1.67132) (xy -2.27076 1.75006) (xy -2.34188 1.85928) (xy -2.43332 1.99136)
-      (xy -2.52222 2.1209) (xy -2.59842 2.2352) (xy -2.64922 2.31394) (xy -2.67208 2.35204)
-      (xy -2.66192 2.37744) (xy -2.60858 2.44094) (xy -2.50952 2.54254) (xy -2.3622 2.68732)
-      (xy -2.33934 2.71018) (xy -2.2225 2.82448) (xy -2.12344 2.91592) (xy -2.05486 2.97688)
-      (xy -2.02438 2.99974)) (layer F.SilkS) (width 0.00254))
+      (xy 2.5908 2.45872) (xy 2.6543 2.3876) (xy 2.67716 2.35712) (xy 2.65684 2.31902)
+      (xy 2.6035 2.2352) (xy 2.52984 2.1209) (xy 2.4384 1.98882) (xy 2.19964 1.64338)
+      (xy 2.33172 1.31572) (xy 2.37236 1.21666) (xy 2.42316 1.09474) (xy 2.46126 1.00838)
+      (xy 2.47904 0.97028) (xy 2.5146 0.95758) (xy 2.6035 0.93726) (xy 2.73304 0.90932)
+      (xy 2.88798 0.88138) (xy 3.0353 0.85344) (xy 3.16738 0.82804) (xy 3.2639 0.81026)
+      (xy 3.30708 0.80264) (xy 3.31724 0.79502) (xy 3.3274 0.7747) (xy 3.33248 0.72898)
+      (xy 3.33502 0.6477) (xy 3.33756 0.5207) (xy 3.33756 0.33782) (xy 3.33756 0.3175)
+      (xy 3.33502 0.14224) (xy 3.33248 0.00254) (xy 3.3274 -0.0889) (xy 3.32232 -0.12446)
+      (xy 3.27914 -0.13462) (xy 3.18516 -0.15494) (xy 3.05308 -0.18034) (xy 2.8956 -0.21082)
+      (xy 2.88544 -0.21336) (xy 2.72796 -0.24384) (xy 2.59334 -0.27178) (xy 2.5019 -0.2921)
+      (xy 2.4638 -0.3048) (xy 2.45364 -0.31496) (xy 2.42316 -0.37846) (xy 2.37744 -0.47498)
+      (xy 2.3241 -0.59436) (xy 2.2733 -0.71882) (xy 2.23012 -0.83058) (xy 2.19964 -0.9144)
+      (xy 2.18948 -0.9525) (xy 2.21488 -0.9906) (xy 2.26822 -1.07188) (xy 2.34442 -1.18618)
+      (xy 2.4384 -1.3208) (xy 2.44348 -1.33096) (xy 2.53492 -1.46304) (xy 2.60858 -1.57734)
+      (xy 2.65684 -1.65862) (xy 2.67716 -1.69418) (xy 2.67462 -1.69672) (xy 2.64668 -1.73482)
+      (xy 2.5781 -1.81102) (xy 2.48158 -1.91262) (xy 2.36474 -2.032) (xy 2.32664 -2.06756)
+      (xy 2.1971 -2.19456) (xy 2.10566 -2.27838) (xy 2.04978 -2.32156) (xy 2.02438 -2.33172)
+      (xy 2.02184 -2.33172) (xy 1.9812 -2.30632) (xy 1.89738 -2.25044) (xy 1.78308 -2.17424)
+      (xy 1.64846 -2.0828) (xy 1.6383 -2.07518) (xy 1.50622 -1.98374) (xy 1.39446 -1.91008)
+      (xy 1.31572 -1.85674) (xy 1.28016 -1.83642) (xy 1.27508 -1.83642) (xy 1.2192 -1.85166)
+      (xy 1.12522 -1.88468) (xy 1.00838 -1.9304) (xy 0.88392 -1.9812) (xy 0.77216 -2.02692)
+      (xy 0.68834 -2.06502) (xy 0.65024 -2.08788) (xy 0.6477 -2.09042) (xy 0.635 -2.13868)
+      (xy 0.61214 -2.23774) (xy 0.58166 -2.3749) (xy 0.55118 -2.54) (xy 0.5461 -2.5654)
+      (xy 0.51562 -2.72542) (xy 0.49022 -2.85496) (xy 0.47244 -2.9464) (xy 0.46228 -2.9845)
+      (xy 0.43942 -2.98958) (xy 0.36322 -2.99466) (xy 0.24384 -2.9972) (xy 0.1016 -2.99974)
+      (xy -0.0508 -2.99974) (xy -0.19812 -2.99466) (xy -0.32258 -2.99212) (xy -0.41402 -2.9845)
+      (xy -0.45212 -2.97688) (xy -0.45212 -2.97434) (xy -0.46736 -2.92608) (xy -0.48768 -2.82702)
+      (xy -0.51562 -2.68732) (xy -0.54864 -2.52476) (xy -0.55372 -2.49428) (xy -0.5842 -2.3368)
+      (xy -0.6096 -2.20726) (xy -0.62992 -2.11582) (xy -0.64008 -2.08026) (xy -0.65278 -2.07264)
+      (xy -0.71882 -2.0447) (xy -0.8255 -2.00152) (xy -0.95758 -1.94818) (xy -1.26238 -1.82372)
+      (xy -1.6383 -2.08026) (xy -1.67132 -2.10312) (xy -1.80594 -2.1971) (xy -1.9177 -2.27076)
+      (xy -1.9939 -2.31902) (xy -2.02692 -2.3368) (xy -2.02946 -2.3368) (xy -2.06756 -2.30378)
+      (xy -2.14122 -2.2352) (xy -2.24282 -2.13614) (xy -2.35966 -2.01676) (xy -2.44856 -1.9304)
+      (xy -2.55016 -1.82626) (xy -2.6162 -1.75514) (xy -2.65176 -1.70942) (xy -2.66446 -1.68148)
+      (xy -2.66192 -1.6637) (xy -2.63652 -1.6256) (xy -2.58318 -1.54178) (xy -2.50444 -1.43002)
+      (xy -2.413 -1.2954) (xy -2.33934 -1.18618) (xy -2.25806 -1.05918) (xy -2.20472 -0.97028)
+      (xy -2.18694 -0.9271) (xy -2.19202 -0.90678) (xy -2.21742 -0.83566) (xy -2.2606 -0.7239)
+      (xy -2.31902 -0.59182) (xy -2.44856 -0.29464) (xy -2.6416 -0.25654) (xy -2.76098 -0.23622)
+      (xy -2.92608 -0.2032) (xy -3.08356 -0.17272) (xy -3.32994 -0.12446) (xy -3.33756 0.77978)
+      (xy -3.29946 0.79502) (xy -3.2639 0.80518) (xy -3.17246 0.8255) (xy -3.04292 0.8509)
+      (xy -2.88798 0.87884) (xy -2.75844 0.90424) (xy -2.62636 0.92964) (xy -2.52984 0.94742)
+      (xy -2.4892 0.95758) (xy -2.47904 0.97028) (xy -2.44602 1.03378) (xy -2.39776 1.13538)
+      (xy -2.34696 1.2573) (xy -2.29362 1.3843) (xy -2.2479 1.50114) (xy -2.21488 1.59004)
+      (xy -2.20218 1.6383) (xy -2.21996 1.67132) (xy -2.27076 1.75006) (xy -2.34188 1.85928)
+      (xy -2.43332 1.99136) (xy -2.52222 2.1209) (xy -2.59842 2.2352) (xy -2.64922 2.31394)
+      (xy -2.67208 2.35204) (xy -2.66192 2.37744) (xy -2.60858 2.44094) (xy -2.50952 2.54254)
+      (xy -2.3622 2.68732) (xy -2.33934 2.71018) (xy -2.2225 2.82448) (xy -2.12344 2.91592)
+      (xy -2.05486 2.97688) (xy -2.02438 2.99974)) (layer F.SilkS) (width 0.00254))
   )
 
   (module bebl_v2_pretty:SOT363 (layer B.Cu) (tedit 54D0FA6C) (tstamp 54D108BA)
@@ -1059,14 +967,9 @@
       (net 18 /LED_brd/LEDP2) (clearance 0.1))
     (pad 6 smd rect (at -0.65 0.95 270) (size 0.4 0.7) (layers B.Cu B.Paste B.Mask)
       (net 6 "Net-(D2-Pad2)") (clearance 0.1))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model ${KIPRJMOD}/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.1 0.1 0.1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 0.1 0.1 0.1))
+      (scale (xyz 0.07000000000000001 0.07000000000000001 0.07000000000000001))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1102,14 +1005,9 @@
       (net 20 /LED_brd/LEDP4) (clearance 0.1))
     (pad 6 smd rect (at -0.65 0.95 270) (size 0.4 0.7) (layers B.Cu B.Paste B.Mask)
       (net 8 "Net-(D4-Pad2)") (clearance 0.1))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model ${KIPRJMOD}/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.1 0.1 0.1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 0.1 0.1 0.1))
+      (scale (xyz 0.07000000000000001 0.07000000000000001 0.07000000000000001))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1145,14 +1043,9 @@
       (net 22 /LED_brd/LEDB6) (clearance 0.1))
     (pad 6 smd rect (at -0.65 0.95 270) (size 0.4 0.7) (layers B.Cu B.Paste B.Mask)
       (net 11 "Net-(D6-Pad2)") (clearance 0.1))
-    (model /home/samata/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
+    (model ${KIPRJMOD}/3d_modules/SOT23_5.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.1 0.1 0.1))
-      (rotate (xyz 0 0 0))
-    )
-    (model /home/anool/projects-git/bebl_v2/kicad/3d_modules/SOT23_5.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 0.1 0.1 0.1))
+      (scale (xyz 0.07000000000000001 0.07000000000000001 0.07000000000000001))
       (rotate (xyz 0 0 0))
     )
   )

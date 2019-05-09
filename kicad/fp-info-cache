@@ -1,0 +1,519 @@
+40491616450006
+bebl_v2_legacy
+C1
+Condensateur e = 1 pas
+C
+0
+2
+2
+bebl_v2_legacy
+C1-1
+Condensateur e = 1 ou 2 pas
+C
+0
+3
+3
+bebl_v2_legacy
+C1.5V8V
+
+
+0
+2
+2
+bebl_v2_legacy
+C2
+Condensateur = 2 pas
+C
+0
+2
+2
+bebl_v2_legacy
+CONN_I%2fO
+Double rangee de contacts 2 x 5 pins
+CONN
+0
+8
+4
+bebl_v2_legacy
+CP_5x11mm
+Capacitor, pol, cyl 5x11mm
+
+0
+2
+2
+bebl_v2_legacy
+CR1632
+CR2032
+
+0
+3
+2
+bebl_v2_legacy
+CR2032
+CR2032
+
+0
+3
+2
+bebl_v2_legacy
+CR2032-BU2032SM-HD-GCT-ND
+
+
+0
+2
+2
+bebl_v2_legacy
+c_0805
+SMT capacitor, 0805
+
+0
+2
+2
+bebl_v2_legacy
+C_ELCO_SMD
+
+
+0
+2
+2
+bebl_v2_legacy
+DS3231
+Module CMS SOJ 16 pins tres large
+CMS SOJ
+0
+16
+16
+bebl_v2_legacy
+d_0805
+SMT LED, 0805
+
+0
+2
+2
+bebl_v2_legacy
+d_VMD2
+SMT Diode, VMD2
+
+0
+2
+2
+bebl_v2_legacy
+I%2fO
+
+
+0
+1
+1
+bebl_v2_legacy
+I%2fO_ADR
+
+
+0
+1
+1
+bebl_v2_legacy
+ISP
+Connecteur 6 pins
+CONN DEV
+0
+6
+6
+bebl_v2_legacy
+Logo-WL3
+
+
+0
+0
+0
+bebl_v2_legacy
+Memory_Card_SD_3M
+
+SD Memory Card Connector 3M SD-RSMT-2-MQ-WF Push-Push R/A SMD
+0
+15
+15
+bebl_v2_legacy
+Memory_Card_SD_Tyco
+
+SD Memory Card Connector 3M SD-RSMT-2-MQ-WF Push-Push R/A SMD
+0
+17
+17
+bebl_v2_legacy
+Memory_Card_uSD
+
+SD Memory Card Connector 3M SD-RSMT-2-MQ-WF Push-Push R/A SMD
+0
+11
+11
+bebl_v2_legacy
+OSHW_6mm
+
+
+0
+0
+0
+bebl_v2_legacy
+PCB
+
+
+0
+0
+0
+bebl_v2_legacy
+PIN_ARRAY-6X1
+Connecteur 6 pins
+CONN DEV
+0
+6
+6
+bebl_v2_legacy
+PIN_ARRAY-9X1
+Connecteur 6 pins
+CONN DEV
+0
+9
+9
+bebl_v2_legacy
+PIN_ARRAY_4x1
+Double rangee de contacts 2 x 5 pins
+CONN
+0
+4
+4
+bebl_v2_legacy
+pin_strip_2
+Pin strip 2pin
+CONN DEV
+0
+2
+2
+bebl_v2_legacy
+pin_strip_6-90
+Pin strip 6pin 90
+CONN DEV
+0
+6
+6
+bebl_v2_legacy
+R1
+Resistance verticale
+R
+0
+2
+2
+bebl_v2_legacy
+r_0805
+SMT resistor, 0805
+
+0
+2
+2
+bebl_v2_legacy
+Sck-04-F-SMT
+
+
+0
+4
+4
+bebl_v2_legacy
+SD Micro
+
+
+0
+15
+15
+bebl_v2_legacy
+SD_Micro
+
+
+0
+15
+15
+bebl_v2_legacy
+SO14E
+module CMS SOJ 14 pins etroit
+CMS SOJ
+0
+14
+14
+bebl_v2_legacy
+SOT23-3
+SOT23-5
+
+0
+3
+3
+bebl_v2_legacy
+SOT23-5
+SOT23-5
+
+0
+5
+5
+bebl_v2_legacy
+Switch_Push_SPST
+EVQ-Q2F03W Compatible
+Switch SMT
+0
+4
+2
+bebl_v2_legacy
+Switch_SMT
+EVQ-Q2F03W Compatible
+Switch SMT
+0
+4
+2
+bebl_v2_legacy
+SW_SMD
+
+
+0
+4
+2
+bebl_v2_legacy
+TQFP32
+
+
+0
+32
+32
+bebl_v2_legacy
+TQFP32_Thermal
+
+
+0
+32
+32
+bebl_v2_legacy
+vite_3mm
+vite 2,5mm
+
+0
+1
+1
+bebl_v2_legacy
+WP_CD
+Double rangee de contacts 2 x 2 pins
+CONN
+0
+4
+4
+bebl_v2_legacy
+XTAL
+Condensateur e = 1 ou 2 pas
+C
+0
+3
+3
+bebl_v2_legacy
+Xtal_SMD
+
+
+0
+3
+3
+bebl_v2_legacy
+Xtal_SMD2
+
+
+0
+4
+2
+bebl_v2_legacy
+Xtal_SMD3
+
+
+0
+4
+3
+bebl_v2_pretty
+ADXL345
+
+
+0
+14
+14
+bebl_v2_pretty
+batt_clip
+
+
+0
+3
+1
+bebl_v2_pretty
+breakout
+
+
+0
+1
+1
+bebl_v2_pretty
+breakout_smd
+
+
+0
+1
+1
+bebl_v2_pretty
+CONN_JST-2_SMD
+
+JST
+0
+4
+2
+bebl_v2_pretty
+c_0805
+SMT capacitor, 0805
+
+0
+2
+2
+bebl_v2_pretty
+Diode-EMD2
+Diode SMB Handsoldering
+Diode SMB Handsoldering
+0
+2
+2
+bebl_v2_pretty
+Header_3x2_ISP
+Connecteur 6 pins
+CONN DEV
+0
+6
+6
+bebl_v2_pretty
+Inductor_LQH3NPN
+Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
+Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
+0
+2
+2
+bebl_v2_pretty
+Inductor_NLCV32
+Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
+Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
+0
+2
+2
+bebl_v2_pretty
+LED-5MM
+LED 5mm - Lead pitch 100mil (2,54mm)
+LED led 5mm 5MM 100mil 2,54mm
+0
+2
+2
+bebl_v2_pretty
+LED-0805
+LED 0805 smd package
+LED 0805 SMD
+0
+2
+2
+bebl_v2_pretty
+PIN_ARRAY-6X1
+Connecteur 6 pins
+CONN DEV
+0
+6
+6
+bebl_v2_pretty
+pin_socket_2
+Pin strip 2pin
+CONN DEV
+0
+2
+2
+bebl_v2_pretty
+pin_strip_2
+Pin strip 2pin
+CONN DEV
+0
+2
+2
+bebl_v2_pretty
+r_0805
+SMT resistor, 0805
+
+0
+2
+2
+bebl_v2_pretty
+screw_3mm
+vite 2,5mm
+
+0
+1
+1
+bebl_v2_pretty
+solder_bridge_3
+SMT capacitor, 0805
+
+0
+3
+3
+bebl_v2_pretty
+SOT23-5
+SOT23-5
+
+0
+5
+5
+bebl_v2_pretty
+SOT23-6
+SOT23-5
+
+0
+6
+6
+bebl_v2_pretty
+SOT23-6_LDO
+SOT23-5
+
+0
+6
+6
+bebl_v2_pretty
+SOT363
+SOT23-5
+
+0
+6
+6
+bebl_v2_pretty
+Switch_SMT
+EVQ-Q2F03W Compatible
+Switch SMT
+0
+4
+2
+bebl_v2_pretty
+TQFP32
+
+
+0
+32
+32
+bebl_v2_pretty
+USB_B_Micro
+
+
+0
+11
+11
+bebl_v2_pretty
+USB_B_Micro_seeed
+
+
+0
+9
+9
+bebl_v2_pretty
+Xtal_SMD4
+
+
+0
+4
+3
